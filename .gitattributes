@@ -71,6 +71,7 @@
 *.html           text eol=lf
 
 ## Probably found automatically, but let's make sure
+*.txt            text eol=lf
 *.param          text eol=lf
 *.bak            text eol=lf
 *.log            text eol=lf
@@ -102,6 +103,7 @@
 #image files (some in the repo)
 *.png           binary
 *.jpg           binary
+*.jpeg          binary
 *.gif           binary
 
 #audio files (none yet in the repo)
