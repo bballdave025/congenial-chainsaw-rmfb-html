@@ -1,0 +1,20 @@
+function GetURL(input) {
+  var myFormula = SpreadsheetApp.getActiveRange().getFormula();
+  var myAddress = myFormula.replace('=GetURL(','').replace(')','');
+  var myRange = SpreadsheetApp.getActiveSheet().getRange(myAddress);
+  
+  var richTextValues = myRange.getRichTextValue().getRuns();
+  var url_str = "";
+  
+  for (var i = 0 ; i < richTextValues.length; i++) {
+    var url = richTextValues[i].getLinkUrl();
+    if (url) {
+      url_str += url.toString() + " , ";
+    }
+  }
+  
+  url_str = url_str.replace(/[ ,]+$/,"");
+  
+  return url_str;
+  
+};
