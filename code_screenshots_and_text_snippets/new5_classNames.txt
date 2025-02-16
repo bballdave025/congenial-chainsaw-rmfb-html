@@ -1,0 +1,148 @@
+overlord
+
+overseer
+
+lord
+potentate
+
+
+
+der Oberherr
+
+der Aufseher
+
+der Herrscher
+die Machthaber
+
+
+
+la suzeraine
+le chef suprême
+la grande patronne
+le suprême
+
+le surveillant
+
+le seigneur
+
+
+
+повелитель
+доминатор
+начальник
+
+надзиратель
+
+властелин
+
+
+semiotic 
+
+
+
+Thinking of what to call my project, as well as the root class.
+
+Earlier in my coding career, I would use a word that was involved
+to: 1) describe the invasion of Normandy 2) entitle a novel by
+Robert Silverberg, 3) a 1960 Marvel Comics Villain who was 
+defeated by the Silver surfer. Translations include der Oberherr
+(probably linguistically closest), le chef suprême, властелин 
+which I know from [maybe show cover from Lord of the Rings in
+Russian] ... der Oberherr, la suzeraine, повелитель, le surveillant,
+надзиратель, der Aufseher, начальник, le seigneur, die Machthaberin.
+And synonyms include potentate, lord, and close-sounding overseer.
+
+Some kind of Public Relations Nightmare if I call it the
+FragmentFindingOverlord
+
+Brother Steve Rockwood
+брат камень дерево
+каменное дерево -> 'Come and Oh Uh Dare Eva'    or 
+                   'Come on, oh yeah, Dare Eva' or 
+                   'Come on over, Dear Eva' 
+(refreu) bois de roche = лесной массив = Stein Holz
+                                         Stein Wald
+
+refresh or referee 
+
+rocher roche pierre roc galet caillou pierre
+silva sylva silvaelucus (weald) 
+saxum petra silex rupes
+rochesylvan
+sylvanrock
+rokluku
+refreh pehrluke
+
+bois
+
+madera de roca
+
+Reused or Repaired Semiotic or Codicological Artifact
+
+ReUPAoSoC - ReeU Pah Oh-sock
+RUPASOC Finder
+
+(Reused Manuscript Binding Fragment Finder)
+
+BroRockwoodFragmentFinder
+
+BSR
+
+
+
+
+
+Austria, Upper Austria, Wels, Census Records, 1613-1900
+https://www.familysearch.org/en/search/collection/2046771
+
+Austria, Upper Austria, Linz, Miscellaneous City Records, 1485-1894
+https://www.familysearch.org/en/search/collection/2046885
+
+Austria, Upper Austria, Linz, Citizen Rolls, 1658-1937
+https://www.familysearch.org/en/search/collection/1923991
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function GetURL(input) {
+  var myFormula = SpreadsheetApp.getActiveRange().getFormula();
+  var myAddress = myFormula.replace('=GetURL(','').replace(')','');
+  var myRange = SpreadsheetApp.getActiveSheet().getRange(myAddress);
+  
+  var richTextValues = myRange.getRichTextValue().getRuns();
+  var url_str = "";
+  
+  for (var i = 0 ; i < richTextValues.length; i++) {
+    var url = richTextValues[i].getLinkUrl();
+    if (url) {
+      url_str += url.toString() + " , ";
+    }
+  }
+  
+  url_str = url_str.replace(/[ ,]+$/,"");
+  
+  return url_str;
+  
+};
+
+
+
+
+
+
+

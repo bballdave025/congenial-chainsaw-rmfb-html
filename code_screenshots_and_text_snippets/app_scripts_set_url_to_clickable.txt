@@ -1,0 +1,20 @@
+function MakeUrlTextClickable(input) {
+  var myFormula = SpreadsheetApp.getActiveRange().getFormula();
+  var myAddress = myFormula.replace('=GetURL(','').replace(')','');
+  var myRange = SpreadsheetApp.getActiveSheet().getRange(myAddress);
+  
+  var textWithUrl = myRange.getRichTextValue();
+  var urlText = richTextValue.getText();
+  
+  var start = 0;
+  var end = urlText.length;
+  
+  const clickableUrl = SpreadsheetApp.newRichTextValue()
+    .setText(urlText)
+    .setLinkUrl(start, end, url_Text)
+  
+  return clickableUrl
+  
+  
+  // need 'onAction' or 'onEdit'
+}
