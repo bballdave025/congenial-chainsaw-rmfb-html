@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  classifier_try.param     David Wallace BLACK     2017-04-  
+~~Now classifier.param                                 2024-02-12  
+~~
+~~   This "<CustomClassificationParameters>" section is the one that will
+~~   give all information necessary for the GUI. This includes information
+~~	 for instruction, for setting up how the document to be classified will
+~~	 be visualized, for setting up the actual classifications, any input
+~~	 and output information necessary, and any other customizations to be
+~~	 made to the GUI.
+~~	 There should be only one "<CustomClassificationParameters>" field.
+~~	 
+~~	 Inside of it should be 1 of each of the following
+~~	   <Info4Gui>
+~~	   <Info4IO>
+~~	 
+~~	 and 0 or more
+~~	   <ClassificationGroup>
+-->
+<CustomClassificationParameters>
+  
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       This "<Info4Gui>" section will give the information about things 
+       that will allow customization of the GUI - such things as 
+	   instructions, presentation of the document(s) to be classified, 
+	   and some visual aspects of the presentation of the possible
+       classifications.
+	   There should be:
+	   
+	     1 <Instructions>
+	    
+		 1 or 2      <InputPanel>
+		   These can be created with any of the following 
+		   <InputPanelType> :
+		     "static-image"      (scrollable)
+			 "zoomable-image"    (scrollable)
+			 "text-field"        (scrollable, not editable)
+			 "formatted-text"    (scrollable, e.g. html output)
+			 !! Maybe later:
+			 !! "zoomable-zoned-image"
+			 !! "purplized-image"
+			 !! "entity-tagger-output"
+			 !! "relation-tagger-output"
+			 !! "text-field-editable"
+		 
+		 0 or more   <SelectionPanel>
+		   If there are no <SelectionPanel>, only the comment field
+		   will be shown.
+		   These can be created with any of the following
+		   <SelectionPanelType> :
+		     "radio-buttons"         ("round select" buttons, only one
+			                          can be selected at a time.)
+			 "drop-down-menu"        (useful when there are many, many
+			                          classifications. only one can
+									  be selected at a time)
+			 "checkboxes"            (more than one can be selected
+			                          at the same time)
+			 "text-input"             (where each needs to be typed)
+       
+       
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <Info4Gui>
+    <!-- For now, this is not read, but will, in the future, -->
+	  <!-- allow customization of the GUI for different input. -->
+	  <!-- Now, we'll just use JRadioButtons                   -->
+    
+	  <!-- Give instructions for how to select. Depending on the
+	       decided scope of this classifier, this might never
+		     change. There should not be more than two lines, and
+		     the text should not go further than 
+      |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|  
+	                                                         -->
+	  <Instructions>
+	    On your keyboard, press the letter in parentheses
+	    next to the best descritpion of the document.
+	  </Instructions>
+	
+	  <!-- These will be inserted horizontally, with the first  
+         panel at the left.                                  -->
+	  <!-- For input images, the possible file extensions are:
+	     
+		   If nothing is listed in the "<ImageExtensions>", or
+		   the tag is blank, all extensions will be allowed.    -->
+    <!-- For input images, the possible file extensions are:
+	     
+		   If nothing is listed in the "<ImageExtensions>", all
+		   extensions will be allowed.                         -->
+    <!-- For input text, for now, the possible file 
+	       extensions are:
+		     .txt
+		   Pat will likely have other extensions which can be
+		   used for input text (I'm thinking about the text-
+		   tiling ".param" files                               -->
+    
+  	<InputPanel id="n0">
+	    <InputPanelType>"zoomable-image"</InputPanelType>
+	    <ImageExtensions>jpg</ImageExtensions> <!-- space-delimit -->
+	    <Title>"Paper FHTC 2024: Types of Reuse"</Title>
+	  
+  	</InputPanel>
+	
+	  <!-- Stacked Vertically -->
+	  <SelectionPanel id="s0" class="radio-buttons">
+	    <SelectionPanelType>radio-buttons</SelectionPanelType>
+	    <RelevantGroups>"g0"</RelevantGroups> <!-- space-delimit -->
+	  </SelectionPanel>
+    
+  </Info4Gui>
+  
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       This "<Info4IO>" section will 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <InfoForIO>
+    
+    <!-- If no "<DefaultInputDirectory>" tag exists, if the 
+	     directory doesn't exist, or if the tag is empty,
+	     the directory from which the classifier is run 
+		   will become the default directory.             -->
+    <DefaultInputDirectory>
+      <!--WindowsInPath>C:\Users\bball\Desktop\cropped_document_images_skinny\holder\input\</WindowsInPath-->
+	    <WindowsInPath>D:\Datasets_and_Models\P2_RMFs_Less_Noisy\Classifying_Folder\input\</WindowsInPath>
+	    <LinuxInPath>"/mnt/d/Datasets_and_Models/P2_RMFs_Less_N oisy/Classifying_Folder/input/"</LinuxInPath>
+	    <MacOSInPath>"/mnt/d/Datasets_and_Models/P2_RMFs_Less_N oisy/Classifying_Folder/input/"</MacOSInPath>
+	    
+	    <DoRandomizeInputFiles>false</DoRandomizeInputFiles>
+      
+      <DoIncludeFilenameEnding>false</DoIncludeFilenameEnding>
+	    
+	  </DefaultInputDirectory>
+	
+	
+	  <!-- If no "<DefaultOutputDirectory>" tag exists, if 
+	       the directory doesn't exist, or if the tag is
+	       empty, the directory from which the classifier is 
+		     run will become the default directory.         -->
+	  <DefaultOutputDirectory>
+      <!--WindowsOutPath>C:\Users\bball\Desktop\cropped_document_images_skinny\holder\output\</WindowsOutPath-->
+	    <WindowsOutPath>D:\Datasets_and_Models\P2_RMFs_Less_Noisy\Classifying_Folder\output\</WindowsOutPath>
+	    <LinuxOutPath>"/mnt/d/Datasets_and_Models/P2_RMFs_Less_N oisy/Classifying_Folder/output/"</LinuxOutPath>
+	    <MacOSOutPath>"/mnt/d/Datasets_and_Models/P2_RMFs_Less_N oisy/Classifying_Folder/output/"</MacOSOutPath>
+	  
+	  </DefaultOutputDirectory>
+	
+  </InfoForIO>
+  
+  
+  <ClassificationGroup id="g0">
+  
+  <!-- Phrase to remember: "image specifically meant to show the [specific] surface" -->
+    
+	  <!-- This next, "choose one" button should always be put in. -->
+	  <Classification id="c0">
+      <DisplayName>Or click type btn and submit</DisplayName>
+      <DirectoryName></DirectoryName>
+      <KeyboardShortcut></KeyboardShortcut>
+	    <AddedFilenameEnding></AddedFilenameEnding>
+	    <Description>
+	      Select this button to clear the selection.
+	    </Description>
+      <Examples>
+        
+      </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c0"             ~~
+                        ~~ JUST DON'T REMOVE THIS ONE  ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+	  
+	  
+    <Classification id="c1">
+      <DisplayName>Outside cover reuse</DisplayName>
+	    <KeyboardShortcut>O</KeyboardShortcut>
+	    <DirectoryName>Outside_Cover_Reuse</DirectoryName>
+	    <AddedFilenameEnding>orc</AddedFilenameEnding>
+	    <Description>
+	      Image shows an instance of a reused manuscript fragment in binding, where the reuse is for the outside cover of the document. This can be a front cover image, a back cover image, an image containing the spine ONLY IF the outside wrapping is visible and contains text/decoration/illumination on its surface (or visible through its surface), or an image of all three where some text/decoration/illumination is visible. Once again, if you can see text/decoration/illumination through the cover - i.e. it's on the same material piece, but on the opposite side and visible through the cover surface.
+        <br/>
+        Note that this classification should only be used when the cover is <i>on the book</i>. If it&apos;s not on the book, the &apos;not in situ coVer&apos; classification should be used.
+	    </Description>
+	    <Examples>
+        <br/><hr/><br/>
+        
+	      <a href="https://drive.google.com/file/d/1Z9eBPrBkuFvC8-eFkY6qYf5NOjDPyJTQ/view?usp=sharing">
+          BaselUniversitatsbib_-_Le-VI-12_00001 
+        </a>
+        
+        Front cover. (Note this is a Latin book, though the reading direction doesn&apos;t matter in the classification of Outside Cover; we aren&apos;t differentiating between front and back covers.) 
+        <br/>
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Outside cover reuse&apos;)
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1Gi2i6twwQy2bYCg1AJZ6lCEOaGwdrk8U/view?usp=sharing">
+          BaselUniversitatsbib_-_Le-VI-12_00004
+        </a>
+        
+        Back cover. (Note this is a Latin book, though the reading direction doesn&apos;t matter in the classification of Outside Cover; we aren&apos;t differentiating between front and back covers.) 
+        <br/>
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Outside cover reuse&apos;)
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <span id="Bamberg-HVMsc359-00002-front-cover"></span>
+        
+        <a href="https://drive.google.com/file/d/1QyCefWjuzEr7exdiRVWi9mFdSoYY0QC8/view?usp=sharing">
+          Bamberg_-_HVMsc359_00002
+        </a>
+        
+        Front cover. It&apos;s not clear that or if the cover was ever sewn to the pages of the book, but since the piece of vellum with the writing on it was used to hold together pages of a book - to bind them together, we&apos;re considering it a binding.
+        <br/>
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Outside cover reuse&apos;)
+        <br/>
+        &#x00A0;
+        The whole set, each of which you should look at, comprises
+        <br/>
+          <a href="#Bamberg-HVMsc359-00002-front-cover">
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            Bamberg_-_HVMsc359_00002 - front cover. 
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            It should be classified as &apos;Outside cover reuse&apos;.
+          </a>
+        <br/>
+          <a href="Bamberg-HVMsc359-00003-calling-it-front-matter">
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            Bamberg_-_HVMsc359_00003 - what we're calling front matter. 
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            It should be classified as &apos;Front matter reuse&apos;.
+          </a>
+        <br/>
+          <a href="Bamberg_-_HVMsc359_00074_not-in-situ-cover-w-f-matter">
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            Bamberg_-_HVMsc359_00074 - a not-in-situ view of 
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            <i>the opposite side</i> of the outside cover<sup>&#x2020;</sup>, 
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            showing what we are calling front matter. 
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            It should be classified as &apos;not in situ coVer&apos;<sup>&#x2020;</sup>.
+          </a>
+        <br/>
+          <a href="Bamberg_-_HVMsc359_00074_not-in-situ-cover-w-f-cover">
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+            Bamberg_-_HVMsc359_00075
+          </a>
+      &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+          - a not-in-situ view of 
+      &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+          <i>the actual</i> outside cover<sup>&#x2020;</sup>, 
+      &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+          showing the front cover.
+      &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;sp;
+          It should be classified as &apos;not in situ coVer&apos;<sup>&#x2020;</sup>.
+        <br/>
+          <!--
+          <span id="Bamberg-HVMsc359-00002-front-cover"></span>
+          <span id="Bamberg-HVMsc359-00003-calling-it-front-matter"></span>
+          <span id="Bamberg-HVMsc359-00074-not-in-situ-cover-w-f-cover"></span>
+          <span id="Bamberg-HVMsc359-00075-not-in-situ-cover-w-f-matter"></span>
+          -->
+        <br/>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c1"            ~~
+                        ~~ Outside cover reuse        ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	  <Classification id="c2">
+      <DisplayName>undeR cover reuse</DisplayName>
+	    <KeyboardShortcut>R</KeyboardShortcut>
+	    <DirectoryName>Under_Cover_Reuse</DirectoryName>
+	    <AddedFilenameEnding>ucr</AddedFilenameEnding>
+	    <Description>
+	      Image shows an example of reuse under the front cover or the back cover, a situation that can happen if: part of the cover has ripped away to show a document underneath; if the cover is too small to cover, e.g. a flyleaf; OR something similar. A couple of notes: 1) If there is reuse on the main, outside cover and such under-cover reuse, the image should be classified as &apos;O&apos; and not as &apos;R&apos;; 2) If the only part of the outside cover that is no longer obscuring text/decoration/illumination underneath is on the spine, &apos;P&apos; - for &apos;sPine-protection reuse&apos; - should be selected. The current classification (&apos;R&apos;) should also be used if part of front matter (especially the paste-down) is torn away showing some text/decoration/illumination on a reused piece of writing material. If the book gutter has the tear, one&apos;s best judgement should be used to choose this classification or the &apos;&apos; classification. If you&apos;re unsure which of the two you should choose, use this classification (&apos;R&apos;).
+	    </Description>
+	    <Examples>
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/166V2xH5K1BSYSNUb9eSiECV8EwXCaMOa/view?usp=sharing">
+          BVPG_-_BibCastillaLaMancha_-_MarcoAurelio_BPE-Toledo-Signatura-16356_00001
+        </a>
+        
+        Front cover has a tear, revealing some text behind.
+        <br/>
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;undeR cover reuse&apos;)
+        
+        <a href="#">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1yquDft1VcZMUjPCHVhMAq6AghKIr5K8n/view?usp=sharing">
+          BVPG_-_BibCastillaLaMancha_-_MarcoAurelio_BPE-Toledo-Signatura-16356_00002
+        </a>
+        
+        There are tears and bookworm-eaten holes in the front paste-down which reveal some text - maybe even printed text, behind.
+        <br/>
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;undeR cover reuse&apos;)
+        
+        <a href="https://drive.google.com/file/d/1mQLqrkKWyKwZajQN1lap4MW1sgApmQPT/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1yquDft1VcZMUjPCHVhMAq6AghKIr5K8n/view?usp=sharing">
+          BVPG_-_BibCastillaLaMancha_-_MarcoAurelio_BPE-Toledo-Signatura-16356_00002
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/14TOe4TTTuKHmKeB6tHlkcBUnzBQrEetJ/view?usp=sharing">
+          BnF_-_Latin11399_00004
+        </a>
+        
+        Front matter torn back, with the book gutter having the tear.
+        <br/>
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;undeR cover reuse&apos;)
+        
+	      <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1T5bShTnr9gtVIGX5vBKM9HLLCPoQx4er/view?usp=sharing">
+          Heidelberg_-_salVII73__z4_00247
+        </a>
+        
+        (Maybe some commentary, someday.)
+        <br/>
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;undeR cover reuse&apos;)
+        
+        <span id="undercover-trumps-wraparound"></span>
+        
+        Okay, for the image of the other pastedown of this same book/codex, I had 
+        <a href="#wraparound-trumps-undercover">
+          wraparound trumping undercover
+        </a>, 
+        and the opposite is happening here. Why? There's probably not a perfect answer to that. They seem about equally conspicuous, and I would really like the model to notice this kind of peek-through whether or not there were the wraparound. Probably the best explanation of the choice here is that the peek-through is really cool.
+       <br/>
+        REMEMBER TO UPLOAD THE JPG INSTEAD OF THE PNG
+               
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1XY7Y9xoRM0GnetaVhUXpzf7V0vjhdd0q/view?usp=sharing">
+          Heidelberg_-_salVIII8__z3_00002
+        </a>
+        
+        That just brings joy to my heart, because it's extremely freaking hard-core. ... (and to think that the bookworms knew it).
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c2"            ~~
+                        ~~ unDer cover reuse          ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	  <Classification id="c3">
+      <DisplayName>sPine protection reuse</DisplayName>
+	    <KeyboardShortcut>P</KeyboardShortcut>
+	    <DirectoryName>Spine_Protection_Reuse</DirectoryName>
+	    <AddedFilenameEnding>spr</AddedFilenameEnding>
+	    <Description>
+	      Image shows text/decoration/illumination which has become visible, because part or all of the spine portion of the outer cover is missing, and the writing is on a support (paper/parchment/etc.) that is protecting the folds of the gatherings&apos; bifolios, i.e. protecting the spine part of the codex. If there is also uncovered text/decoration/illumination visible on the front or back cover, &apos;U&apos; should be used instead of the current classification (&apos;P&apos;), UNLESS the image view is specifically meant to show the spine.
+	    </Description>
+	    <Examples>
+        <br/><hr/><br/>
+        
+	      <a href="https://drive.google.com/file/d/19EMSepiucI7-sGTMdZkI02RwPYGbo5CB/view?usp=drive_link">
+          BeromunsterStiftskircheStMichael_-_Epistolar-ecod_028
+        </a>
+        
+        Spine - part of the cover of the spine is peeling away, 
+        making text visible. It&apos;s interesting to see the ivory of the
+        treasure cover alongside the spine-protection reuse
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Spine protection reuse&apos;)
+        
+        <a href="https://drive.google.com/file/d/1CirwIrNFObIV3EvrDnhND0PApMnSRAqv/view?usp=sharing">
+          With text/decoration/illumination highlighted. 
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1DxP-tgwImOqL1vFfY0o3fsaMrKBT6ZMy/view?usp=sharing">
+          Bamberg_-_MscAst4_00002
+        </a>
+        
+        Spine - this is so even though the image view is specifically meant
+        to show the front cover of the book. Compare the image to the 
+        image specifically meant to show the spine of the same book, which
+        is just after the highlighted version of this image.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Spine protection reuse&apos;)
+        
+        <a href="https://drive.google.com/file/d/1E4Qj1lzt8-7CKqXu5nEoqnO4GzT4-Lor/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1xdqrHM2ziXCLigdPMJtKZBGSBsPj9qRd/view?usp=sharing">
+           Bamberg_-_MscAst4_00438
+        </a>
+        
+        Spine - this view is specifically meant to show the spine,
+        and the reused manuscript fragment is much more visible
+        than it was in the previous (front-cover) view.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Spine protection reuse&apos;)
+        
+        <a href="https://drive.google.com/file/d/1zOP_u65XrgCYBRv-zJFsPkV_MnrdiUTg/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1rWwZ9YHQ6a6U3SlXF0ZTfC5hXPhTVkm1/view?usp=sharing">
+          StGallenStiftsbib_-_CodSang53-ecod_903
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c3"            ~~
+                        ~~ sPine protection reuse     ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	  
+    <Classification id="c4">
+      <DisplayName>Front-back matter reuse</DisplayName>
+	    <KeyboardShortcut>F</KeyboardShortcut>
+	    <DirectoryName>Front_Matter_Reuse</DirectoryName>
+	    <AddedFilenameEnding>fmr</AddedFilenameEnding>
+	    <Description>
+	      Image shows text from the previous use on one of a couple types of defined folios. First type: the reused document can be on a pastedown - whether it&apos;s still pasted down onto the board part of the binding, partially folded back, now unpasted but still directly after the board part of the binding, or included after a new flyleaf or flyleaves with both sides of what was previously the pastedown now available for view. The reused document can also be on a flyleaf. Usually, in an original binding, this is the first folio after the board part of the binding (and usually also the pastedown, which combines with the board to make one block). However, there can be more than one flyleaves used with reuse - corresponding to the first, second, (third, fourth, ...) leaves after the board binding/pastedown block. If the pastedown is unpasted, it can be argued that the pastedown is now a flyleaf, and the original flyleaf becomes a second flyleaf. The important points are: 1) that the pastedown or flyleaf NOT have material that is part of the new codex document nor of the title, description, cataloging, pen trials, etc. for the new codex document; and 2) that the pastedown or flyleaf contain text/decoration/illumination.
+	    </Description>
+	    <Examples>
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/drive/u/0/folders/1vuQfcF-ZGTBD1Mjox9sxmNSrAjaosYUV">
+          BNFrance_-_Recueil_de_fabliaux_dits_contes_-_MsFr837-btv1b55013464t_00004
+        </a>
+        
+        Front paste-down. The reused manuscript is a notarial document of some kind.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Front-back matter reuse&apos;)
+        
+	      <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1tpBUMfJiFsHWknr5YeR5eQLMMqmuka-1/view?usp=sharing">
+          BNFrance_-_Recueil_de_fabliaux_dits_contes_-_MsFr837-btv1b55013464t_00743
+        </a>
+        
+        Back paste-down. The same notarial document is used as in the front paste-down of the same codex.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Front-back matter reuse&apos;)
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1boTqfRNwqB6IMwJKsbDdIbvQfkqHU0Km/view?usp=sharing">
+          LOC_-_MarcoPolo_gdcwdl-wdl-14300_00002
+        </a>
+        
+        Reuse for the paste-down (with reuse for the flyleaf visible on the  opposite, partially-imaged page across the book gutter).
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Front-back matter reuse&apos;)
+        
+        <a href="https://drive.google.com/file/d/1OyecyrZ7S6oNKQQrYZ7u_vjgIH7-gGoB/view?usp=sharing">
+          LOC_-_MarcoPolo_gdcwdl-wdl-14300_00003
+        </a>
+        
+        Reuse for the flyleaf (with reuse for the pastedown visible on the opposite, partially-imaged page across the book gutter).
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Front-back matter reuse&apos;)
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1ek-wmOGJLcGu35a_XDbnSbQVVd3rAtGZ/view?usp=sharing">
+          Bodl_-_BodleianLib_MsHamilton52_00005
+        </a>
+        
+        This is the surface where the front paste-down would be. On the very right side, you can see that some ink (or more likely, its acid) has transferred the shapes of some of the letters onto the board where an old paste-down was ... well ... pasted down. This can also be called offset. Even if you can figure out that the ink transfer came from the first page of the book, mark it as &apos;Front-back matter reuse&apos;, because I want the model to catch it.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Front-back matter reuse&apos;)
+        
+        <a href="https://drive.google.com/file/d/134xYtWlMCbpNeUIHPjMNlkZW4wGyS7QO/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/101BtQs63T4UiYdw--a8g3JxexUo8M19j/view?usp=sharing">
+          Bodl_-_BodleianLib_MsHamilton52_00265
+        </a>
+        
+        Interestingly enough, this surface for what would have been the back paste-down for the same document has a much-easier-to-see-and-read example of offset, which will be considered &apos;Front-back matter reuse&apos;. I won&apos;t chase down all the letters and/or colored initials present, but I&apos;ll do enough to give you the idea. You might notice that different letters have made different marks that are sometimes in the same place. You might also notice that the text is mirror-imaged and its top-to-bottom direction is left-to-right in the image.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;Front-back matter reuse&apos;)
+        
+        <a href="https://drive.google.com/file/d/1omoPCTeAdfINiGUV6etZ3VhBdda3TP7N/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <span id="Bamberg-HVMsc359-00003-calling-it-front-matter"></span>
+        
+        <a href="https://drive.google.com/file/d/1JALExKyryXucgqtQJfiTmaUO6mPun3bT/view?usp=sharing">
+          Bamberg_-_HVMsc359_00003
+        </a>
+        
+        Front matter - if one wants to get technical, this is the reverse side of the cover shown in 
+          <a href="#Bamberg-MscAst4-00002-front-cover">
+            Bamberg_-_HVMsc359_00003 Bamberg-MscAst4-00002-front-cover
+          </a>. 
+        However, this is in the structurally-equivalent place of a paste-down. Since we don&apos;t differentiate flyleaf from paste-down, anyway, this is fine being classified as &apos;Front Matter Reuse&apos;.
+        <br/>
+        &#x00A0;&#x00A0;&#x00A0;&#x00A0;
+        The whole set, each of which you should look at, comprises
+        <br/>
+          <a href="#Bamberg-HVMsc359-00002-front-cover">
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            Bamberg_-_HVMsc359_00002 - front cover. 
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            It should be classified as &apos;Outside cover reuse&apos;.
+          </a>
+        <br/>
+          <a href="Bamberg-HVMsc359-00003-calling-it-front-matter">
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            Bamberg_-_HVMsc359_00003 - what we're calling front matter. 
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            It should be classified as &apos;Front matter reuse&apos;.
+          </a>
+        <br/>
+          <a href="Bamberg_-_HVMsc359_00074_not-in-situ-cover-w-f-matter">
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            Bamberg_-_HVMsc359_00074 - a not-in-situ view of 
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            <i>the opposite side</i> of the outside cover<sup>&#x2020;</sup>, 
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            showing what we are calling front matter. 
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            It should be classified as &apos;not in situ coVer&apos;<sup>&#x2020;</sup>.
+          </a>
+        <br/>
+          <a href="Bamberg_-_HVMsc359_00074_not-in-situ-cover-w-f-cover">
+            &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+            Bamberg_-_HVMsc359_00075
+          </a>
+          &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+          - a not-in-situ view of 
+          &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+          <i>the actual</i> outside cover<sup>&#x2020;</sup>, 
+          &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+          showing the front cover.
+          &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+          It should be classified as &apos;not in situ coVer&apos;<sup>&#x2020;</sup>.
+        <br/>
+          <!--
+          <span id="Bamberg-HVMsc359-00002-front-cover"></span>
+          <span id="Bamberg-HVMsc359-00003-calling-it-front-matter"></span>
+          <span id="Bamberg-HVMsc359-00074-not-in-situ-cover-w-f-cover"></span>
+          <span id="Bamberg-HVMsc359-00075-not-in-situ-cover-w-f-matter"></span>
+          -->
+        <br/>
+          <b id="not-in-situ-uncertainty">&#x2020;</b> The only sure way <strike>we</strike> I know whether the observed side is what was bound as the outside cover or not is to know that the images of the cover in situ and not in situ exist. That is, I see the same, front-cover text on (the complete) image 00002 and on (the right half of) image 00075, and I see the same text on (the left half of) image 00003is because <strike>we</strike> I saw the same text. (I imagine a codicologist would usually know which side of the leaf was bound as the outside cover - even in cases like these where there isn't a big difference in wear and where there's no pasted part - and I can even do so with some images.) The take-home message is that, when we have an image of such an not-in-situ cover, we don&apos;t have to worry whether it was facing outside or inside; we classify it &apos;&apos;
+        <br/>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c4"            ~~
+                        ~~ Front-back matter reuse    ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c5">
+      <DisplayName>one beHind reuse</DisplayName>
+	    <KeyboardShortcut>H</KeyboardShortcut>
+	    <DirectoryName>One_Behind_Reuse</DirectoryName>
+	    <AddedFilenameEnding>obr</AddedFilenameEnding>
+	    <Description>
+	      Image shows an instance where an instance of one of the other reuse cases has just one slip of paper (whether part of the codex or not) between it and the camera lens. Other than the one leaf of paper, any object - such as a start-film plaque, a paperweight, a ruler, a color-checker, or ... I don&apos;t know ... a hammer - could be the object of which the reuse is one object behind.
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1iYgkrU2TmPHmjIC-pMge6yjhQBuXp0WD/view?usp=sharing">
+          FamilySearch_-_DGS008104286_01030
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c5"            ~~
+                        ~~ one beHind reuse           ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c6">
+      <DisplayName>reuse cover Wraparound</DisplayName>
+	    <KeyboardShortcut>W</KeyboardShortcut>
+	    <DirectoryName>Cover_Wraparound_Reuse</DirectoryName>
+	    <AddedFilenameEnding>cwa</AddedFilenameEnding>
+	    <Description>
+	      Image is of text/decoration/illumination that is a continuation of the outside-cover text, which continuation wraps around the cover board. Note that <i>this should be used when you are directly seeing the wraparound on the image specifically meant to show the surface where it wraps around or when you see the wraparound on the opposite surface and there is no other example of reuse</i> - either the binding board itself or the paste-down that&apos;s still pasted down to the binding board or the page directly after either of the previous two. If you&apos;re seeing the wraparound from an image with any other surface, you should use the &apos;reuse Tiny background&apos; classification. Oh, there's one exception to this. If you are seeing the head, tail, or (that other one where you see the edges of all the codex's pages at the same time), you should also use &apos;W&apos;. (This would be a good place to have example images, if I get there.)
+        
+        In the case where all of one and a part of a second page are shown - i.e. the book gutter and some material past it are shown - there are two cases: 1) if such wraparound is an edge (some edges) of the main page/surface being shown, use this classification (&apos;W&apos;) 2) if such wraparound is an edge (some edges) of the opposite, partial page, still use this classification (&apos;W&apos;). 
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1UDXDSeTYUr37NZDJk2nBHMeJ2uuxWbim/view?usp=drive_link">
+          Heidelberg_-_salVII73__z4_00002
+        </a>
+        
+        <a href="https://drive.google.com/file/d/12aVJ-nCaJUhSyPfjOrzVXY-Lx1vkEReq/view?usp=sharing">
+          With text/decoration/illumination highlighted. 
+        </a>
+        
+        Okay, this one might be one that least needs the highlighting, but I wanted an easy one where I was very confident about all of the letter outlines I highlighted.
+        <br/>
+        
+        <span id="wraparound-trumps-undercover"></span>
+        
+        Also, some of the stuff visible through the holes bored by the bookworms looks suspiciously like undercoVer reuse, but the wraparound would trump in this case.
+        <br/>
+        <i>However</i>, have a look down at
+        <a href="#undercover-trumps-wraparound">
+          the other paste-down from this same codex
+        </a>,
+        where I have the undercover stuff trumping the wraparound.
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1i1ravoHGelvFtB22bPpWNfm0oNAlXSvK/view?usp=sharing">
+          Cologny_-_CodBodmer99-ecod_017
+        </a>
+        
+        Head (or tail) of the book.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;reuse cover Wraparound&apos;)
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c6"            ~~
+                        ~~ reuse cover Wraparound     ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c7">
+      <DisplayName>reuse Tiny background</DisplayName>
+	    <KeyboardShortcut>T</KeyboardShortcut>
+	    <DirectoryName>Tiny_Background_Reuse</DirectoryName>
+	    <AddedFilenameEnding>tbr</AddedFilenameEnding>
+	    <Description>
+	      Image shows a situation where there is reuse visible two or more leaves behind the main page being shown. These two or more pages are basically a stack of pages that you've either already read or which you have yet to read. This means a paste-down with reuse, a flyleaf with reuse, or some cover wraparound with reuse are visible outside of what the stack of pages covers. The reuse on the wraparound and/or paste-down and/or flyleaf is not hidden, but is visible on the edges behind all the other pages. (Note that if there is only one page in the stack, the &apos;one beHind reuse&apos; classification should be used.)
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1QIfoo6_q4VWO7WvotzZL-40QTPEFlco0/view?usp=sharing">
+          FamilySearch_-_DGS004534287_00361
+        </a>
+        
+        Pay more attention to the text at the top-right. The text at the top-left is also some cover wraparound behind several sheets, but I like the right-hand-side stuff better.
+        
+        POSITIVE EXAMPLE. 
+        (This <i>should</i> be classified as &apos;reuse cover Wraparound&apos;)
+        
+        <a href="https://drive.google.com/file/d/14Hcn_INhTc0Sxz17rSo7v_9ot3rxVZFc/view?usp=drive_link">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/18MjDKC36SmMYgdOvf5lJGGVbMEXbZNLo/view?usp=sharing">
+          FamilySearch_-_DGS008278942_00088
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1CFgMv3n2oCY5Ad4uPaSa8193RjmXUyKD/view?usp=sharing">
+          FamilySearch_-_DGS008279838_01060
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c7"            ~~
+                        ~~ reuse Tiny background      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c8">
+      <DisplayName>not in situ coVer</DisplayName>
+	    <KeyboardShortcut>V</KeyboardShortcut>
+	    <DirectoryName>Not_In_Situ_Cover</DirectoryName>
+	    <AddedFilenameEnding>nsc</AddedFilenameEnding>
+	    <Description>
+	      Image shows a sheet which obviously had been reused for the cover of a binding, but which is no longer serving as the cover of a binding. Someone has taken off the cover, or the cover fell off.
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c8"            ~~
+                        ~~ not in situ coVer          ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c9">
+      <DisplayName>not in situ Besides cover</DisplayName>
+	    <KeyboardShortcut>B</KeyboardShortcut>
+	    <DirectoryName>Not_In_Situ_Besides_Cover</DirectoryName>
+	    <AddedFilenameEnding>nsb</AddedFilenameEnding>
+	    <Description>
+	      This classification would be called &apos;not in situ Besides cover&apos; if there were more room.) Image shows a reused fragment which was used in binding but not used in the outside cover. In other words, it shows a detached paste-down, a detached flyleaf, or some kind of detached binding connection. It&apos; obvious that the fragment had been reused for binding, but it&apos;s no longer connected to the book. (The fragment isn&apos;t a cover, either.)
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c9"            ~~
+                        ~~ not in situ Besides cover ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    
+    <Classification id="c10">
+      <DisplayName>small Connect, strength, guard</DisplayName>
+	    <KeyboardShortcut>C</KeyboardShortcut>
+	    <DirectoryName>Small_Connecting_or_Guard_Reuse</DirectoryName>
+	    <AddedFilenameEnding>scg</AddedFilenameEnding>
+	    <Description>
+	      Image shows an instance of strips of parchment/etc. that connect the pages of the book to the binding, that cover up things such as the binding straps, that go as cut-off pages (stubs) between gatherings to reduce friction or in gatherings to give a better place to sew the binding to, etc. The best thing to do here would be to look at examples.
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1JTF5QvlI91bLF2Vto2rFqsM3oC_Ly9In/view?usp=sharing">
+          Bodl_-_BodleianLib_MsHamilton52_00013
+        </a>
+        
+        Even with highlighting, it is barely visible. 
+        
+        <a href="https://drive.google.com/file/d/1SJO4ljRWoflmNXNHpfyz2ppqHO3gdq6V/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        This next image will show a different part of the connection/strengthening/guard piece, and it will hopefully make clearer what is happening here.
+        
+        <a href="https://drive.google.com/file/d/1Er6ABwPYDnJHHvESo-3NMZAXS2XHMVmJ/view?usp=sharing">
+          Bodl_-_BodleianLib_MsHamilton52_00014
+        </a>
+        
+        This page, which is opposite the previous page, i.e. it would be visible at the same time that the previous page is visible - shows the connecting, strengthening piece, a piece that guards part of the connection and allows the pages to be sewn to the cover. 
+        
+        The highlighting should be easier to follow this time. 
+        
+        <a href="https://drive.google.com/file/d/1coiMk8u8cq2efzv9K-SeMkj3uWr5n8rX/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1wbofcsVJ8AZtV-dYiJytWjN2NIiizynP/view?usp=sharing">
+          FamilySearch_-_DGS004514899_00687
+        </a>
+        
+        Three connecting, strengthening strips bisible between the front paste-down and the first flyleaf
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1fTUdm8_jYQft5sGOKlb4XPqLFE32KOSZ/view?usp=sharing">
+          FamilySearch_-_DGS004534287_00172
+        </a>
+        
+        Six strengthening, connecting strips visible. Four of them have text - or some kind of meaningful and done-on-purpose ink/paint marks. It&apos;s very visible where they had been glued to the board part of the cover. Note that there's also cover wraparound in this image, but the connecting, strengthening strips take precedence. (Eventually, I want this image to be part of both classifications.)
+        
+        <a href="https://drive.google.com/file/d/1AxX4TnwiUbIgZLr4T2FGYUSnEx4GlWPK/view?usp=sharing">
+          With text/decoration/illumination highlighted.
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <b>This next example is NOT an example of reuse!</b>
+        
+        <a href="https://drive.google.com/file/d/19bliqfifI_h3F2tUXEv4atpLjxxToVtS/view?usp=sharing">
+          FamilySearch_-_DGS005847593_00003
+        </a>
+        
+        Here we have four connecting straps, very similar to the ones in the previous images, but <i>there is not any text/decoration/illumination</i> on them.
+        
+        NEGATIVE EXAMPLE. 
+        (This <i>should NOT</i> be classified as &apos;small Connect, strength, guard&apos;.)
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1w5lfcdc3e3lcK5r6PE9_ne-XChgs6O4F/view?usp=sharing">
+          LOC_-_ComplutensianPolyglotBibleVol3_wdl-10636-003_00536
+        </a>
+        
+        Manuscript reuse in a printed book.
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c10"           ~~
+                        ~~ small Connect, strength, guard  ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c11">
+      <DisplayName>across book Gutter reuse</DisplayName>
+	    <KeyboardShortcut>G</KeyboardShortcut>
+	    <DirectoryName>Across_Book_Gutter_Reuse</DirectoryName>
+	    <AddedFilenameEnding>abg</AddedFilenameEnding>
+	    <Description>
+	      Image shows an instance of reuse, but not reuse on the page that is the main focus of the image. The reuse is visible across the book gutter (on the page/folio that's either immediately before or immediately after the page of which the image is taking as its main purpose). [I ought to make that at least as clear as mud, especially while I'm forcing myself not to put in all the examples.] When a codex is open, there are two pages visible. Some images are meant to be taken of only one of these pages, but part of the other page is often visible. When the reuse is visible on that other page, use this classification.
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1lYpFM62I5f6n86p9QOC4aRSyNNmrjukN/view?usp=sharing">
+          Bodleian-Library-Douce-A-subt-67_00005
+        </a>
+        
+        We see the right-hand page as the main reason for the image, but what we see on the left-hand page is either a paste-down or a flyleaf.
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="https://drive.google.com/file/d/1_eJvx_EusNxKlM_eo3iHY_XR42TGy6sz/view?usp=sharing">
+          HermetschwilBndnktnKlstr_CodChart139_00004
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+        
+        <a href="">
+        
+        </a>
+        
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        
+        <br/><hr/><br/>
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c11"           ~~
+                        ~~ across book Gutter reuse   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <!-- FIRST ONE IS TEMPLATE -->
+    <!-- The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> cWHATEVER
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ cWHATEVER
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like _stitching_, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c12
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c12
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, _manicule_, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c13
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c14
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, _iron-gall ink 
+         corrosion through the page_, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c15
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c15
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, _non-binding reuse_, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c16
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c16
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe _palimpsest_, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c17
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c17
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe _alphabet pen trial_, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c18
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c18
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe _scribal 
+         portrait_, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c19
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c19
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe _parchment-maker portrait_, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c20
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c20
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe _bookmark_, ...
+    ~~>
+    <Classification id="cDIGITS"> c21
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c21
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _illuminator portrait_, ...
+    ~~>
+    <Classification id="cDIGITS"> c22
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c22
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c23
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c23
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _animal hair_ ...
+    ~~>
+    <Classification id="cDIGITS"> c24
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c24
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _animal vein marks_ ...
+    ~~>
+    <Classification id="cDIGITS"> c25
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c25
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _fingerprint(s)_ ...
+    ~~>
+    <Classification id="cDIGITS"> c26
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c26
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <>!~~ENDOF:  The other classifications - skeleton XML -->
+    
+    
+       
+	  <Classification id="c27">
+      <DisplayName>reuse wIth other Interesting</DisplayName>
+	    <KeyboardShortcut>I</KeyboardShortcut>
+	    <DirectoryName>Reuse_With_Other_Desired_Classification</DirectoryName>
+	    <AddedFilenameEnding>wod</AddedFilenameEnding>
+	    <Description>
+	      Image has more than one of the characteristics described above. It will need to be sent through and given each of the classifications, so these should be well-taken-care-of.
+        
+        For now, we&apos;re not worrying about these.
+	    </Description>
+	    <Examples>
+	      
+	    </Examples>
+    </Classification> <!-- ENDOF:  id="c27"           ~~
+                        ~~ with other Interesting     ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+	<Classification id="c28">
+      <DisplayName>Nothing interesting</DisplayName>
+	    <KeyboardShortcut>N</KeyboardShortcut>
+	    <DirectoryName>Nothing_Interesting</DirectoryName>
+	    <AddedFilenameEnding>noi</AddedFilenameEnding>
+	    <Description>
+	      Image doesn&apos;t have any of the characteristics above. It will be a false for all. This classification is used to show that the image has been inspected, but it has not been found to belong to any of the classifications.
+	    </Description>
+	    <Examples>
+	      
+	    </Examples>
+    </Classification> <!-- ENDOF:  id="c28"           ~~
+                        ~~ Nothing interesting        ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<Classification id="c29">
+      <DisplayName>Do not use</DisplayName>
+	    <KeyboardShortcut>D</KeyboardShortcut>
+	    <DirectoryName>Do_Not_Use</DirectoryName>
+	    <AddedFilenameEnding>dnu</AddedFilenameEnding>
+	    <Description>
+	      Something that you think would throw off the model, or something you&apos;re really not sure about.
+	    </Description>
+	    <Examples>
+		
+		  </Examples>
+    </Classification> <!-- ENDOF:  id="c29"           ~~
+                        ~~ Do not use                 ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<Classification id="c30">
+      <DisplayName>Unsure</DisplayName>
+	    <KeyboardShortcut>U</KeyboardShortcut>
+	    <DirectoryName>Unsure</DirectoryName>
+	    <AddedFilenameEnding></AddedFilenameEnding>
+	    <Description>
+	      Something you would like someone to return to.
+	    </Description>
+	    <Examples>
+	      
+	    </Examples>
+    </Classification> <!-- ENDOF:  id="c30"           ~~
+                        ~~ Unsure                     ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+  </ClassificationGroup>
+
+</CustomClassificationParameters>
