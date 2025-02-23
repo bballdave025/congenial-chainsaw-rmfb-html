@@ -337,78 +337,10 @@
 	    <DirectoryName>Across_Book_Gutter_Reuse</DirectoryName>
 	    <AddedFilenameEnding>abg</AddedFilenameEnding>
 	    <Description>
-	      Image shows an instance of reuse, but not reuse on the page that is the main focus of the image. The reuse is visible across the book gutter (on the page/folio that's either immediately before or immediately after the page of which the image is taking as its main purpose). [I ought to make that at least as clear as mud, especially while I'm forcing myself not to put in all the examples.] When a codex is open, there are two pages visible. Some images are meant to be taken of only one of these pages, but part of the other page is often visible. When the reuse is visible on that other page, use this classification.
+	      In a different document, now.
 	    </Description>
 	    <Examples>
-	      <br/><hr/><br/>
-        
-        <a href="https://drive.google.com/file/d/1lYpFM62I5f6n86p9QOC4aRSyNNmrjukN/view?usp=sharing">
-          Bodleian-Library-Douce-A-subt-67_00005
-        </a>
-        
-        We see the right-hand page as the main reason for the image, but what we see on the left-hand page is either a paste-down or a flyleaf.
-        
-        <a href="#">
-          With text/decoration/illumination highlighted. 
-          (Not done yet - maybe never will be.)
-        </a>
-        
-        <br/><hr/><br/>
-        
-        <a href="https://drive.google.com/file/d/1_eJvx_EusNxKlM_eo3iHY_XR42TGy6sz/view?usp=sharing">
-          HermetschwilBndnktnKlstr_CodChart139_00004
-        </a>
-        
-        <a href="#">
-          With text/decoration/illumination highlighted. 
-          (Not done yet - maybe never will be.)
-        </a>
-        
-        <br/><hr/><br/>
-        
-        <a href="">
-        
-        </a>
-        
-        <a href="#">
-          With text/decoration/illumination highlighted. 
-          (Not done yet - maybe never will be.)
-        </a>
-        
-        <br/><hr/><br/>
-        
-        <a href="">
-        
-        </a>
-        
-        <a href="#">
-          With text/decoration/illumination highlighted. 
-          (Not done yet - maybe never will be.)
-        </a>
-        
-        <br/><hr/><br/>
-        
-        <a href="">
-        
-        </a>
-        
-        <a href="#">
-          With text/decoration/illumination highlighted. 
-          (Not done yet - maybe never will be.)
-        </a>
-        
-        <br/><hr/><br/>
-        
-        <a href="">
-        
-        </a>
-        
-        <a href="#">
-          With text/decoration/illumination highlighted. 
-          (Not done yet - maybe never will be.)
-        </a>
-        
-        <br/><hr/><br/>
+	      In a different document, now.
 	    </Examples>
       
     </Classification> <!-- ENDOF:  id="c11"           ~~
@@ -895,12 +827,10 @@
 	    <DirectoryName>Reuse_With_Other_Desired_Classification</DirectoryName>
 	    <AddedFilenameEnding>wod</AddedFilenameEnding>
 	    <Description>
-	      Image has more than one of the characteristics described above. It will need to be sent through and given each of the classifications, so these should be well-taken-care-of.
-        
-        For now, we&apos;re not worrying about these.
+	      In a different document, now.
 	    </Description>
 	    <Examples>
-	      
+	      In a different document, now.
 	    </Examples>
     </Classification> <!-- ENDOF:  id="c27"           ~~
                         ~~ with other Interesting     ~~
@@ -912,10 +842,10 @@
 	    <DirectoryName>Nothing_Interesting</DirectoryName>
 	    <AddedFilenameEnding>noi</AddedFilenameEnding>
 	    <Description>
-	      Image doesn&apos;t have any of the characteristics above. It will be a false for all. This classification is used to show that the image has been inspected, but it has not been found to belong to any of the classifications.
+	      In a different document, now.
 	    </Description>
 	    <Examples>
-	      
+	      In a different document, now.
 	    </Examples>
     </Classification> <!-- ENDOF:  id="c28"           ~~
                         ~~ Nothing interesting        ~~
@@ -927,10 +857,10 @@
 	    <DirectoryName>Do_Not_Use</DirectoryName>
 	    <AddedFilenameEnding>dnu</AddedFilenameEnding>
 	    <Description>
-	      Something that you think would throw off the model, or something you&apos;re really not sure about.
+	      In a different document, now.
 	    </Description>
 	    <Examples>
-		
+		    In a different document, now.
 		  </Examples>
     </Classification> <!-- ENDOF:  id="c29"           ~~
                         ~~ Do not use                 ~~
@@ -942,10 +872,10 @@
 	    <DirectoryName>Unsure</DirectoryName>
 	    <AddedFilenameEnding></AddedFilenameEnding>
 	    <Description>
-	      Something you would like someone to return to.
+	      In a different document, now.
 	    </Description>
 	    <Examples>
-	      
+	      In a different document, now.
 	    </Examples>
     </Classification> <!-- ENDOF:  id="c30"           ~~
                         ~~ Unsure                     ~~
