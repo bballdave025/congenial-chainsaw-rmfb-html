@@ -1,0 +1,29 @@
+# @file : older_branches_hex.log
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git branch
+  adding-lotta-images
+  convert2html-w-images-01-basics
+  first-html-image-commit
+  getting-classify-qnr-ready
+* main
+  third_polish_job
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git delete -b adding-lotta-images
+git: 'delete' is not a git command. See 'git --help'.
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git branch -d adding-lotta-images
+Deleted branch adding-lotta-images (was 7d93f0f).
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git branch -d convert2html-w-images-01-basics
+Deleted branch convert2html-w-images-01-basics (was 167b1d3).
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git branch -d first-html-image-commit
+Deleted branch first-html-image-commit (was 312230a).
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git branch -d third_polish_job
+Deleted branch third_polish_job (was f5457c3).
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git branch -d getting-classify-qnr-ready
+Deleted branch getting-classify-qnr-ready (was c047722).
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>:: 2025-02-24T065800-0700
