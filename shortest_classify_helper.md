@@ -2,27 +2,27 @@
 
 | c? | Classification Directory Name | Keyboard Key to Use | File-ending Three Letters | Any Mnemonic Explanation | Shows Up As |
 |------|---|---|---|---|---|
-| c1   | Outside_Cover_Reuse | \[O\] | orc | Don't want to confuse optical character recognition, so <ins>o</ins>utside <ins>r</ins>euse <ins>c</ins>over (I never said it was logical.) | <ins>O</ins>utside cover reuse |
-| c2   | Under_Cover_Reuse | \[R\] | ucr | Initialism | unde<ins>R</ins> cove<ins>R</ins> <ins>R</ins>euse |
-| c3   | Spine_Protection_Reuse | \[P\] | spr | Initialism | s<ins>P</ins>ine_<ins>P</ins>rotection_reuse |
-| c4   | Front-back_Matter_Reuse | \[F\] | fmr | <ins>f</ins>ront <ins>m</ins>atter <ins>r</ins>euse | <ins>F</ins>ront-back matter reuse |
-| c5   |  |  |  |  |  |
-| c6   |  |  |  |  |  |
-| c7   |  |  |  |  |  |
-| c8   |  |  |  |  |  |
-| c9   |  |  |  |  |  |
-| c10  |  |  |  |  |  |
-| c11  |  |  |  |  |  |
-| c12  |  |  |  |  |  |
-| c13  |  |  |  |  |  |
-| c14  |  |  |  |  |  |
+| c1   | Outside_Cover_Reuse | <kbd>O</kbd> | <code>orc</code> | Don't want to confuse optical character recognition, so <ins>o</ins>utside <ins>r</ins>euse <ins>c</ins>over (I never said it was logical.) | <ins>O</ins>utside cover reuse |
+| c2   | Under_Cover_Reuse | \[R\] | <code>ucr</code> | Initialism | unde<ins>R</ins> cove<ins>R</ins> <ins>R</ins>euse |
+| c3   | Spine_Protection_Reuse | \[P\] | <code>spr</code> | Initialism | s<ins>P</ins>ine_<ins>P</ins>rotection_reuse |
+| c4   | Front-back_Matter_Reuse | \[F\] | <code>fmr</code> | <ins>f</ins>ront <ins>m</ins>atter <ins>r</ins>euse | <ins>F</ins>ront-back matter reuse |
+| c5   | One_Behind_Reuse | H | <code>obr</code> |  |  |
+| c6   | Cover_Wraparound_Reuse | W | <code>cwa</code> |  |  |
+| c7   | Tiny_Background_Reuse | T | <code>tbr</code> |  |  |
+| c8   | Small_Connecting_or_Guard_Reuse | C | <code>scg</code> |  |  |
+| c9   | Across_Book_Gutter_Reuse | G | <code>abg</code> |  |  |
+| c10  | Wrapper_Reuse | 4 | <code>wpr</code> |  |  |
+| c11  | Not_In_Situ_Reuse_Cover | V | <code>nsc</code> |  |  |
+| c12  | Not_In_Situ_Reuse_Front-back | A | <code>nsf</code> |  |  |
+| c13  | Not_In_Situ_Reuse_Spine_Protection | 9 | <code>nsp</code> |  |  |
+| c14  | Not_In_Situ_Reuse_Small_Connecting_Guard | 7 | <code>nst</code> |  |  |
 | ...  | ... | ... | ... | Perhaps more, one day | ... |
-| c21  |  |  |  |  |  |
-| c22  |  |  |  |  |  |
-| c23  |  |  |  |  |  |
-| c24  |  |  |  |  |  |
-| c25  |  |  |  |  |  |
-| c26  |  |  |  |  |  |
+| c21  | Outside_Cover_Without_Reuse | 6 | <code>woc</code> |  |  |
+| c22  | Front-back_Matter_Without_Reuse | 5 | <code>wfb</code> |  |  |
+| c23  | Small_Connecting_Guard_Without_Reuse | L | <code>wcg</code> |  |  |
+| c24  | Across_Book_Gutter_Other_Interesting_Without_Reuse | \[ | <code>wag</code> |  |  |
+| c25  | Not_In_Situ_Spine_Protection_Without_Reuse | Q | <code>wnp</code> |  |  |
+| c26  | Not_In_Situ_Small_Connecting_Guard_Without_Reuse | , | <code>wnc</code> |  |  |
 | ...  | ... | ... | ... | Maybe more, someday | ... |
 | c51  | Stitching_Any_Type | \[S\] | <code>stc</code> | <ins>st</ins>it<ins>c</ins>hing | <ins>S</ins>titching any type |
 | c52  | Stitching_Level_1 | \[1\] | <code>st1</code> | <ins>st</ins>itching level <ins>1</ins> | stitching level <ins>1</ins> |
