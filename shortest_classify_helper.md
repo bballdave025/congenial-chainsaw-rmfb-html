@@ -6,7 +6,7 @@
 | c2   | Under_Cover_Reuse | <kbd>R</kbd> | <code>ucr</code> | Initialism | unde<ins>R</ins> cove<ins>R</ins> <ins>R</ins>euse |
 | c3   | Spine_Protection_Reuse | <kbd>P</kbd> | <code>spr</code> | Initialism | s<ins>P</ins>ine <ins>P</ins>rotection_reuse |
 | c4   | Front-back_Matter_Reuse | <kbd>F</kbd> | <code>fmr</code> | <ins>f</ins>ront <ins>m</ins>atter <ins>r</ins>euse | <ins>F</ins>ront-back matter reuse |
-| c5   | One_Behind_Reuse | <kbd>H</kbd> | <code>obr</code> | Initialism | TRYING WITHOUT THIS FOR FHTW 2025 one beHind reuse |
+| <strike>c5</strike>   | <strike>One_Behind_Reuse</strike> | <strike>_<kbd>H</kbd>_</strike> | <strike><code>obr</code></strike> | <strike>Initialism</strike> | TRYING WITHOUT THIS FOR FHTW 2025 <strike>one be<ins>H</ins>ind reuse</strike> |
 | c6   | Cover_Wraparound_Reuse | <kbd>W</kbd> | <code>cwa</code> | <ins>c</ins>over <ins>w</ins>rap<ins>a</ins>round | cover <ins>W</ins>raparound reuse |
 | c7   | Tiny_Background_Reuse | <kbd>T</kbd> | <code>tbr</code> | Initialism |  |
 | c8   | Small_Connecting_or_Guard_Reuse | <kbd>C</kbd> | <code>scg</code> | <ins>s</ins>mall <ins>c</ins>onnecting or <ins>g</ins>uard  | small <ins>C</ins>onnecting or guard reuse |
