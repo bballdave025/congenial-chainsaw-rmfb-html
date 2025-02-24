@@ -27,3 +27,15 @@ Deleted branch third_polish_job (was f5457c3).
 Deleted branch getting-classify-qnr-ready (was c047722).
 
 (base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>:: 2025-02-24T065800-0700
+
+
+
+
+
+
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>git branch -d simpler-qnr-classify
+Deleted branch simpler-qnr-classify (was 286032a).
+
+(base) C:\David\my_repos_dwb\congenial-chainsaw-rmfb-html>:: 2025-02-24T095700-0700
+
