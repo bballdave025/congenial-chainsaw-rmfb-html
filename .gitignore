@@ -25,6 +25,9 @@
 
 # None of those Windows Office (at least MS Word) backup files
 $~*
+~$*
+~WRL*
+~*
 
 #*.info
 

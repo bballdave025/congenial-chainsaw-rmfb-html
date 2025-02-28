@@ -6,7 +6,7 @@
 | c2   | Under_Cover_Reuse | <kbd>R</kbd> | <code>ucr</code> | Initialism | unde<ins>R</ins> cove<ins>R</ins> <ins>R</ins>euse |
 | c3   | Spine_Protection_Reuse | <kbd>P</kbd> | <code>spr</code> | Initialism | s<ins>P</ins>ine <ins>P</ins>rotection_reuse |
 | c4   | Front-back_Matter_Reuse | <kbd>F</kbd> | <code>fmr</code> | <ins>f</ins>ront <ins>m</ins>atter <ins>r</ins>euse | <ins>F</ins>ront-back matter reuse |
-| c5   | One_Behind_Reuse | <kbd>H</kbd> | <code>obr</code> | Initialism | TRYING WITHOUT THIS FOR FHTW 2025 one beHind reuse |
+| <strike>c5</strike>   | <strike>One_Behind_Reuse</strike> | <strike>_<kbd>H</kbd>_</strike> | <strike><code>obr</code></strike> | <strike>Initialism</strike> | TRYING WITHOUT THIS FOR FHTW 2025 <strike>one be<ins>H</ins>ind reuse</strike> |
 | c6   | Cover_Wraparound_Reuse | <kbd>W</kbd> | <code>cwa</code> | <ins>c</ins>over <ins>w</ins>rap<ins>a</ins>round | cover <ins>W</ins>raparound reuse |
 | c7   | Tiny_Background_Reuse | <kbd>T</kbd> | <code>tbr</code> | Initialism |  |
 | c8   | Small_Connecting_or_Guard_Reuse | <kbd>C</kbd> | <code>scg</code> | <ins>s</ins>mall <ins>c</ins>onnecting or <ins>g</ins>uard  | small <ins>C</ins>onnecting or guard reuse |
@@ -33,14 +33,14 @@
 | <strike>c57</strike>  | <strike>Fingerprint</strike> | <strike>_<kbd>.</kbd>_</strike> | <strike><code>fgp</code></strike> | <strike><ins>f</ins>in<ins>g</ins>er<ins>p</ins>rint; also, the dot is kind of like a far-away fingerprint, where you can't see the swooshes and stuff</strike> | NOT FOR FHTW 2025 <strike>fingerprint (<ins>.</ins>)</strike> |
 | <strike>c58</strike>  | <strike>Hair_on_Parchment</strike> | <strike>_<kbd>\]</kbd>_</strike> | <strike><code>hop</code></strike> |<strike> Initialism; the square bracket is like the hair of a man lying with his head to the right</strike> | NOT FOR FHTW 2025 <strike>hair on parchment ( <ins>\]</ins> )</strike> |
 | <strike>c59</strike>  | <strike>Very_Visible_Watermark</strike> | <strike>_<kbd>;</kbd>_</strike> | <strike><code>vvw</code></strike> | <strike>Initialism; idk, maybe they are two drops of water, and they are both marks - especially the comma</strike> | NOT FOR FHTW 2025 <strike>very visible watermark (<ins>;</ins>)</strike> |
-| <strike>c60</strike>  | <strike>Non_Binding_Reuse</strike> | <strike>_<kbd>Y</kbd>_</strike> | <strike><code>nbr</code></strike></strike> | <strike>Initialism; even when it's not in a binding, reuse always makes me say <ins>Y</ins>es!</strike> | NOT FOR FHTW 2025 <strike>non binding reuse (<ins>Y</ins>es)</strike> |
+| <strike>c60</strike>  | <strike>Non_Binding_Reuse</strike> | <strike>_<kbd>\`</kbd>_</strike> | <strike><code>nbr</code></strike></strike> | <strike>Initialis</strike> | NOT FOR FHTW 2025 <strike>non binding reuse (<ins>Y</ins>es)</strike> |
 | ...  | ... | ... | ... | Almost certainly more, and probably soon! | ... |
 | <strike><em>c71</em></strike>  | <strike><em>Iron_Gall_Corrosion_Level_1</em></strike> | <strike><em>_<kbd>Shift</kbd> + <kbd>1</kbd></em>_</strike> | <strike><em><code>ig1</code></em></strike> | <strike><em><ins>i</ins>ron <ins>g</ins>all <ins>1</ins></em></strike> | NOT FOR FHTW 2025 <strike><em>corrosion level <ins>1</ins></em></strike> |
 | <strike><em>c72</em></strike>  | <strike><em>Iron_Gall_Corrosion_Level_2</em></strike> | <strike><em>_<kbd>Shift</kbd> + <kbd>2</kbd>_</em></strike> | <strike><em><code>ig2</code></em></strike> | <strike><em><ins>i</ins>ron <ins>g</ins>all <ins>2</ins></em></strike> | NOT FOR FHTW 2025 <strike><em>corrosion level <ins>2</ins></em></strike> |
 | <strike><em>c73</em></strike>  | <strike><em>Iron_Gall_Corrosion_Level_3</em></strike> | <strike><em>_<kbd>Shift</kbd> + <kbd>3</kbd>_</em></strike> | <strike><em><code>ig3</code></em></strike> | <strike><em><ins>i</ins>ron <ins>g</ins>all <ins>3</ins></em></strike> | NOT FOR FHTW 2025 <strike><em>corrosion level <ins>3</ins></em></strike> |
 | <strike>c74</strike>  | <strike>Iron_Gall_Corrosion_Level_4_Thru</strike> | <strike><kbd>_<code>I</code></kbd>_ <em><strong>or</strong>_<kbd>Shift</kbd> + <kbd>4</kbd></em>_</strike> | <strike><code>igt</code></strike> | <strike><ins>i</ins>ron <ins>g</ins>all <ins>t</ins>hrough</strike> | NOT FOR FHTW 2025 <strike><ins>I</ins>ron gall corros<ins>I</ins>on thru</strike> |
 | ...  | ... | ... | ... | Very likely more, hopefully after talking with some experts! | ... |
-| c101 | Multiple_Classes | <kbd>=</kbd> | <code>mcl</code> | <ins>m</ins>ultiple <ins>cl</ins>asses | multiple classes (<ins>=</ins> |
+| c101 | Multiple_Classes | <kbd>=</kbd> | <code>mcl</code> | <ins>m</ins>ultiple <ins>cl</ins>asses | multiple classes (<ins>=</ins>) |
 | c102 | Multiple_Binding_Reuse_Classes | <kbd>B</kbd> | <code>mbr</code> | <ins>m</ins>ultiple <ins>b</ins>inding <ins>r</ins>euse | multiple <ins>B</ins>inding reuse classes |
 | c103 | Multiple_Mixed_Incl_Not_Binding | <kbd>X</kbd> | <code>mmx</code> | <ins>m</ins>ultiple <ins>m</ins>i<ins>x</ins>ed (the <ins>x</ins> can help you think of not binding; the word, binding, x-ed out) | multiple mi<ins>x</ins>ed incl not binding |
 | ...  | ... | ... | ... | Maybe multiple more, but idk. | ... |
