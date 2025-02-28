@@ -17,7 +17,7 @@
 | c13  | Not_In_Situ_Reuse_Spine_Protection | <kbd>9</kbd> | <code>nsp</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>(s)p</ins>ine |  |
 | c14  | Not_In_Situ_Reuse_Small_Connecting_Guard | <kbd>7</kbd> | <code>nst</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>s</ins>mall connecting like <ins>(s)t</ins>rap; 7 in like a backwards gamma -> G sound -> <ins>Guard</ins> |  |
 | ...  | ... | ... | ... | Perhaps more, one day | ... |
-| c101 | Multiple_Classes | <kbd>=</kbd> | <code>mcl</code> | <ins>m</ins>ultiple <ins>cl</ins>asses | multiple classes (<ins>=</ins> |
+| c101 | Multiple_Classes | <kbd>=</kbd> | <code>mcl</code> | <ins>m</ins>ultiple <ins>cl</ins>asses | multiple classes (<ins>=</ins>) |
 | c102 | Multiple_Binding_Reuse_Classes | <kbd>B</kbd> | <code>mbr</code> | <ins>m</ins>ultiple <ins>b</ins>inding <ins>r</ins>euse | multiple <ins>B</ins>inding reuse classes |
 | c103 | Multiple_Mixed_Incl_Not_Binding | <kbd>X</kbd> | <code>mmx</code> | <ins>m</ins>ultiple <ins>m</ins>i<ins>x</ins>ed (the <ins>x</ins> can help you think of not binding; the word, binding, x-ed out) | multiple mi<ins>x</ins>ed incl not binding |
 | ...  | ... | ... | ... | Maybe multiple more, but idk. | ... |
