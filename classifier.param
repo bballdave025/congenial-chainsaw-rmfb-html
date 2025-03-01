@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  classifier_try.param     David Wallace BLACK     2017-04-  
+~~Now classifier.param                                 2024-02-12  
+~~
+~~   This "<CustomClassificationParameters>" section is the one that will
+~~   give all information necessary for the GUI. This includes information
+~~	 for instruction, for setting up how the document to be classified will
+~~	 be visualized, for setting up the actual classifications, any input
+~~	 and output information necessary, and any other customizations to be
+~~	 made to the GUI.
+~~	 There should be only one "<CustomClassificationParameters>" field.
+~~	 
+~~	 Inside of it should be 1 of each of the following
+~~	   <Info4Gui>
+~~	   <Info4IO>
+~~	 
+~~	 and 0 or more
+~~	   <ClassificationGroup>
+-->
+<CustomClassificationParameters>
+  
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       This "<Info4Gui>" section will give the information about things 
+       that will allow customization of the GUI - such things as 
+	   instructions, presentation of the document(s) to be classified, 
+	   and some visual aspects of the presentation of the possible
+       classifications.
+	   There should be:
+	   
+	     1 <Instructions>
+	    
+		 1 or 2      <InputPanel>
+		   These can be created with any of the following 
+		   <InputPanelType> :
+		     "static-image"      (scrollable)
+			 "zoomable-image"    (scrollable)
+			 "text-field"        (scrollable, not editable)
+			 "formatted-text"    (scrollable, e.g. html output)
+			 !! Maybe later:
+			 !! "zoomable-zoned-image"
+			 !! "purplized-image"
+			 !! "entity-tagger-output"
+			 !! "relation-tagger-output"
+			 !! "text-field-editable"
+		 
+		 0 or more   <SelectionPanel>
+		   If there are no <SelectionPanel>, only the comment field
+		   will be shown.
+		   These can be created with any of the following
+		   <SelectionPanelType> :
+		     "radio-buttons"         ("round select" buttons, only one
+			                          can be selected at a time.)
+			 "drop-down-menu"        (useful when there are many, many
+			                          classifications. only one can
+									  be selected at a time)
+			 "checkboxes"            (more than one can be selected
+			                          at the same time)
+			 "text-input"             (where each needs to be typed)
+       
+       
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <Info4Gui>
+    <!-- For now, this is not read, but will, in the future, -->
+	  <!-- allow customization of the GUI for different input. -->
+	  <!-- Now, we'll just use JRadioButtons                   -->
+    
+	  <!-- Give instructions for how to select. Depending on the
+	       decided scope of this classifier, this might never
+		     change. There should not be more than two lines, and
+		     the text should not go further than 
+      |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|  
+	                                                         -->
+	  <Instructions>
+	    On your keyboard, press the letter in parentheses
+	    next to the best descritpion of the document.
+	  </Instructions>
+	
+	  <!-- These will be inserted horizontally, with the first  
+         panel at the left.                                  -->
+	  <!-- For input images, the possible file extensions are:
+	     
+		   If nothing is listed in the "<ImageExtensions>", or
+		   the tag is blank, all extensions will be allowed.    -->
+    <!-- For input images, the possible file extensions are:
+	     
+		   If nothing is listed in the "<ImageExtensions>", all
+		   extensions will be allowed.                         -->
+    <!-- For input text, for now, the possible file 
+	       extensions are:
+		     .txt
+		   Pat will likely have other extensions which can be
+		   used for input text (I'm thinking about the text-
+		   tiling ".param" files                               -->
+    
+  	<InputPanel id="n0">
+	    <InputPanelType>"zoomable-image"</InputPanelType>
+	    <ImageExtensions>jpg</ImageExtensions> <!-- space-delimit -->
+	    <Title>"Paper FHTC 2024: Types of Reuse"</Title>
+	  
+  	</InputPanel>
+	
+	  <!-- Stacked Vertically -->
+	  <SelectionPanel id="s0" class="radio-buttons">
+	    <SelectionPanelType>radio-buttons</SelectionPanelType>
+	    <RelevantGroups>"g0"</RelevantGroups> <!-- space-delimit -->
+	  </SelectionPanel>
+    
+  </Info4Gui>
+  
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       This "<Info4IO>" section will 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <InfoForIO>
+    
+    <!-- If no "<DefaultInputDirectory>" tag exists, if the 
+	     directory doesn't exist, or if the tag is empty,
+	     the directory from which the classifier is run 
+		   will become the default directory.             -->
+    <DefaultInputDirectory>
+      <!--WindowsInPath>C:\Users\bball\Desktop\cropped_document_images_skinny\holder\input\</WindowsInPath-->
+	    <WindowsInPath>D:\Datasets_and_Models\All_for_FHTW_2025\From_2024_Gathering\Mostly_Near_Binding_Pages\input\</WindowsInPath>
+	    <LinuxInPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/input/"</LinuxInPath>
+	    <MacOSInPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/input/"</MacOSInPath>
+	    
+	    <DoRandomizeInputFiles>false</DoRandomizeInputFiles>
+      
+      <DoIncludeFilenameEnding>false</DoIncludeFilenameEnding>
+	    
+	  </DefaultInputDirectory>
+	
+	
+	  <!-- If no "<DefaultOutputDirectory>" tag exists, if 
+	       the directory doesn't exist, or if the tag is
+	       empty, the directory from which the classifier is 
+		     run will become the default directory.         -->
+	  <DefaultOutputDirectory>
+      <!--WindowsOutPath>C:\Users\bball\Desktop\cropped_document_images_skinny\holder\output\</WindowsOutPath-->
+	    <WindowsOutPath>D:\Datasets_and_Models\All_for_FHTW_2025\From_2024_Gathering\Mostly_Near_Binding_Pages\output\</WindowsOutPath>
+	    <LinuxOutPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/output/"</LinuxOutPath>
+	    <MacOSOutPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/output/"</MacOSOutPath>
+	  
+	  </DefaultOutputDirectory>
+	
+  </InfoForIO>
+  
+  
+  <ClassificationGroup id="g0">
+  
+  <!-- Phrase to remember: "image specifically meant to show the [specific] surface" -->
+    
+	  <!-- This next, "choose one" button should always be put in. -->
+	  <Classification id="c0">
+      <DisplayName>Or click type btn and submit</DisplayName>
+      <DirectoryName></DirectoryName>
+      <KeyboardShortcut></KeyboardShortcut>
+	    <AddedFilenameEnding></AddedFilenameEnding>
+	    <Description>
+	      Select this button to clear the selection.
+	    </Description>
+      <Examples>
+        
+      </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c0"             ~~
+                        ~~ JUST DON'T REMOVE THIS ONE  ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+	  
+	  
+    <Classification id="c1">
+      <DisplayName>Outside cover reuse</DisplayName>
+	    <KeyboardShortcut>O</KeyboardShortcut>
+	    <DirectoryName>Outside_Cover_Reuse</DirectoryName>
+	    <AddedFilenameEnding>orc</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c1"            ~~
+                        ~~ Outside cover reuse        ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	  <Classification id="c2">
+      <DisplayName>undeR cover reuse</DisplayName>
+	    <KeyboardShortcut>R</KeyboardShortcut>
+	    <DirectoryName>Under_Cover_Reuse</DirectoryName>
+	    <AddedFilenameEnding>ucr</AddedFilenameEnding>
+	    <Description>
+        In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c2"            ~~
+                        ~~ unDer cover reuse          ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	  <Classification id="c3">
+      <DisplayName>sPine protection reuse</DisplayName>
+	    <KeyboardShortcut>P</KeyboardShortcut>
+	    <DirectoryName>Spine_Protection_Reuse</DirectoryName>
+	    <AddedFilenameEnding>spr</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c3"            ~~
+                        ~~ sPine protection reuse     ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	  
+    <Classification id="c4">
+      <DisplayName>Front-back matter reuse</DisplayName>
+	    <KeyboardShortcut>F</KeyboardShortcut>
+	    <DirectoryName>Front-back_Matter_Reuse</DirectoryName>
+	    <AddedFilenameEnding>fmr</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c4"            ~~
+                        ~~ Front-back matter reuse    ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <!--Classification id="c5">
+      <DisplayName>one beHind reuse</DisplayName>
+	    <KeyboardShortcut>H</KeyboardShortcut>
+	    <DirectoryName>One_Behind_Reuse</DirectoryName>
+	    <AddedFilenameEnding>obr</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+    </Classification--> <!-- ENDOF:  id="c5"            ~~
+                          ~~ one beHind reuse           ~~
+                          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c6">
+      <DisplayName>cover Wraparound reuse</DisplayName>
+	    <KeyboardShortcut>W</KeyboardShortcut>
+	    <DirectoryName>Cover_Wraparound_Reuse</DirectoryName>
+	    <AddedFilenameEnding>cwa</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c6"            ~~
+                        ~~ cover Wraparound reuse     ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c7">
+      <DisplayName>Tiny background reuse</DisplayName>
+	    <KeyboardShortcut>T</KeyboardShortcut>
+	    <DirectoryName>Tiny_Background_Reuse</DirectoryName>
+	    <AddedFilenameEnding>tbr</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c7"            ~~
+                        ~~ Tiny background reuse      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c8">
+      <DisplayName>Connecting or guard reuse</DisplayName>
+	    <KeyboardShortcut>C</KeyboardShortcut>
+	    <DirectoryName>Connecting_or_Guard_Reuse</DirectoryName>
+	    <AddedFilenameEnding>scg</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c8"                ~~
+                        ~~ Connecting or guard reuse      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c9">
+      <DisplayName>across book Gutter reuse</DisplayName>
+	    <KeyboardShortcut>G</KeyboardShortcut>
+	    <DirectoryName>Across_Book_Gutter_Reuse</DirectoryName>
+	    <AddedFilenameEnding>abg</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c9"               ~~
+                        ~~ across book Gutter reuse      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    
+    <Classification id="c10">
+      <DisplayName>wrapper reuse (4)</DisplayName>
+	    <KeyboardShortcut>4</KeyboardShortcut>
+	    <DirectoryName>Wrapper_Reuse</DirectoryName>
+	    <AddedFilenameEnding>wpr</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c10"       ~~
+                        ~~ wrapper reuse (4)      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c15">
+      <DisplayName>general not in situ reuse (Y)</DisplayName>
+	    <KeyboardShortcut>Y</KeyboardShortcut>
+	    <DirectoryName>General_Not_In_Situ_Reuse</DirectoryName>
+	    <AddedFilenameEnding>gni</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c15"                   ~~
+                        ~~ general not in situ reuse (Y)      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <!-- FIRST ONE IS TEMPLATE -->
+    <!-- The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> cWHATEVER
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ cWHATEVER
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like _stitching_, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c12
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c12
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, _manicule_, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c13
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c14
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, _iron-gall ink 
+         corrosion through the page_, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c15
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c15
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, _non-binding reuse_, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c16
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c16
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe _palimpsest_, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c17
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c17
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe _alphabet pen trial_, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c18
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c18
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe _scribal 
+         portrait_, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c19
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c19
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe _parchment-maker portrait_, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c20
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c20
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe _bookmark_, ...
+    ~~>
+    <Classification id="cDIGITS"> c21
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c21
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _illuminator portrait_, ...
+    ~~>
+    <Classification id="cDIGITS"> c22
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"      ~~ c22
+                        ~~ DISPNAME                   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+    ~~>
+    <Classification id="cDIGITS"> c23
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c23
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _animal hair_ ...
+    ~~>
+    <Classification id="cDIGITS"> c24
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c24
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _animal vein marks_ ...
+    ~~>
+    <Classification id="cDIGITS"> c25
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c25
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <!~~ The other, classifications (not document pages reused in 
+         bindings), like stitching, manicule, iron-gall ink 
+         corrosion through the page, non-binding reuse, 
+         maybe palimpsest, maybe alphabet pen trial, maybe scribal 
+         portrait, maybe parchment-maker portrait, maybe bookmark, ...
+         maybe _fingerprint(s)_ ...
+    ~~>
+    <Classification id="cDIGITS"> c26
+      <DisplayName>DISPNAME</DisplayName>
+	    <KeyboardShortcut>ONE-LETTER</KeyboardShortcut>
+	    <DirectoryName>DIRNAME</DirectoryName>
+	    <AddedFilenameEnding>THREE-LOWERCASE-LETTERS</AddedFilenameEnding>
+	    <Description>
+        CLASSIFICATION-DESCRIPTION
+	    </Description>
+	    <Examples>
+	      <br/><hr/><br/>
+        <a href="EXAMPLE-GDRIVE-URL">
+          EXAMPLE-FILENAME
+        </a>
+        <a href="#">
+          With text/decoration/illumination highlighted. 
+          (Not done yet - maybe never will be.)
+        </a>
+        <br/><hr/><br/>
+	    </Examples>
+    </Classification> 
+                      <>!~~ ENDOF:  id="cDIGITS"       ~~ c26
+                         ~~ DISPNAME                   ~~
+                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~<>
+    
+    
+    <>!~~ENDOF:  The other classifications - skeleton XML -->
+    
+    
+    <Classification id="c101">
+      <DisplayName>multiple classes (=)</DisplayName>
+	    <KeyboardShortcut>=</KeyboardShortcut>
+	    <DirectoryName>Multiple_Classes</DirectoryName>
+	    <AddedFilenameEnding>mcl</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c101"         ~~
+                        ~~ multiple classes (=)      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+	<Classification id="c123">
+      <DisplayName>Nothing interesting</DisplayName>
+	    <KeyboardShortcut>N</KeyboardShortcut>
+	    <DirectoryName>Nothing_Interesting</DirectoryName>
+	    <AddedFilenameEnding>noi</AddedFilenameEnding>
+	    <Description>
+	      Image doesn&apos;t have any of the characteristics above. It will be a false for all. This classification is used to show that the image has been inspected, but it has not been found to belong to any of the classifications.
+	    </Description>
+	    <Examples>
+	      In other file
+	    </Examples>
+    </Classification> <!-- ENDOF:  id="c123"           ~~
+                        ~~ Nothing interesting         ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<Classification id="c124">
+      <DisplayName>Do not use</DisplayName>
+	    <KeyboardShortcut>D</KeyboardShortcut>
+	    <DirectoryName>Do_Not_Use</DirectoryName>
+	    <AddedFilenameEnding>dnu</AddedFilenameEnding>
+	    <Description>
+	      Something that you think would throw off the model, or something you&apos;re really not sure about.
+	    </Description>
+	    <Examples>
+		    In other file
+		  </Examples>
+    </Classification> <!-- ENDOF:  id="c124"           ~~
+                        ~~ Do not use                  ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<Classification id="c125">
+      <DisplayName>Unsure</DisplayName>
+	    <KeyboardShortcut>U</KeyboardShortcut>
+	    <DirectoryName>Unsure</DirectoryName>
+	    <AddedFilenameEnding></AddedFilenameEnding>
+	    <Description>
+	      Something you would like someone to return to.
+	    </Description>
+	    <Examples>
+	      In other file
+	    </Examples>
+    </Classification> <!-- ENDOF:  id="c125"           ~~
+                        ~~ Unsure                      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+  </ClassificationGroup>
+
+</CustomClassificationParameters>
