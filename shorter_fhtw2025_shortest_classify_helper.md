@@ -12,15 +12,18 @@
 | c8   | Small_Connecting_or_Guard_Reuse | <kbd>C</kbd> | <code>scg</code> | <ins>s</ins>mall <ins>c</ins>onnecting or <ins>g</ins>uard  | small <ins>C</ins>onnecting or guard reuse |
 | c9   | Across_Book_Gutter_Reuse | <kbd>G</kbd> | <code>abg</code> | <ins>a</ins>cross <ins>b<ins>ook <ins>g</ins>utter | across book <ins>G</ins>utter reuse |
 | c10  | Wrapper_Reuse | <kbd>4</kbd> | <code>wpr</code> | <ins>w</ins>ra<ins>p</ins>per | wrapper reuse (<ins>4</ins>) |
-| c11  | Not_In_Situ_Reuse_Cover | <kbd>V</kbd> | <code>nsc</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>c</ins>over |  |
-| c12  | Not_In_Situ_Reuse_Front-back | <kbd>A</kbd> | <code>nsf</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>f</ins>ront-back |  |
-| c13  | Not_In_Situ_Reuse_Spine_Protection | <kbd>9</kbd> | <code>nsp</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>(s)p</ins>ine |  |
-| c14  | Not_In_Situ_Reuse_Small_Connecting_Guard | <kbd>7</kbd> | <code>nst</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>s</ins>mall connecting like <ins>(s)t</ins>rap; 7 in like a backwards gamma -> G sound -> <ins>Guard</ins> |  |
+| <code>%</code>c11<code>%</code>  | Not_In_Situ_Reuse_Cover | <kbd>V</kbd> | <code>nsc</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>c</ins>over |              <code>%%%%  TO  %%%%</code> |
+| <code>%</code>c12<code>%</code>  | Not_In_Situ_Reuse_Front-back | <kbd>A</kbd> | <code>nsf</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>f</ins>ront-back |    <code>%%%%  BE  %%%%</code> |
+| <code>%</code>c13<code>%</code>  | Not_In_Situ_Reuse_Spine_Protection | <kbd>9</kbd> | <code>nsp</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>(s)p</ins>ine | <code>%%%  COMB-  %%</code> |
+| <code>%</code>c14<code>%</code>  | Not_In_Situ_Reuse_Small_Connecting_Guard | <kbd>7</kbd> | <code>nst</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>s</ins>mall connecting like <ins>(s)t</ins>rap; 7 in like a backwards gamma -> G sound -> <ins>Guard</ins> | <code>%%%  INED  %%%</code> |
+| c15  | General_Not_In_Situ_Reuse | <kbd>Y</kbd> | <code>gni</code> | <ins>g</ins>eneral <ins>n</ins>ot <ins>i</ins>n situ reuse | general not in situ reuse (<ins>Y</ins>) |
 | ...  | ... | ... | ... | Perhaps more, one day | ... |
 | c101 | Multiple_Classes | <kbd>=</kbd> | <code>mcl</code> | <ins>m</ins>ultiple <ins>cl</ins>asses | multiple classes (<ins>=</ins>) |
 | c102 | Multiple_Binding_Reuse_Classes | <kbd>B</kbd> | <code>mbr</code> | <ins>m</ins>ultiple <ins>b</ins>inding <ins>r</ins>euse | multiple <ins>B</ins>inding reuse classes |
-| c103 | Multiple_Mixed_Incl_Not_Binding | <kbd>X</kbd> | <code>mmx</code> | <ins>m</ins>ultiple <ins>m</ins>i<ins>x</ins>ed (the <ins>x</ins> can help you think of not binding; the word, binding, x-ed out) | multiple mi<ins>x</ins>ed incl not binding |
+| c103 | Multiple_Mixed_But_All_Not_Binding | <kbd>X</kbd> | <code>mmx</code> | <ins>m</ins>ultiple <ins>m</ins>i<ins>x</ins>ed (the <ins>x</ins> can help you think of not binding; the word, binding, x-ed out) | multiple mi<ins>X</ins>ed but all not binding |
 | ...  | ... | ... | ... | Maybe multiple more, but idk. | ... |
+| c111 | Fake_Out | <kbd>K</kbd> | <code>fko</code> | <ins>f</ins>a<ins>k</ins>e-<ins>o</ins>ut | fa<ins>K</ins>e-out |
+| ...  | ... | ... | ... | ... | ... |
 | c121 | No_For_Binding_Reuse | <kbd>0</kbd> | <code>nbr</code> | <ins>n</ins>o for <ins>b</ins>inding <ins>r</ins>euse | n<ins>0</ins> for binding reuse (<ins>0</ins>) |
 | c122 | No_Binding_Reuse_but_Other_Interesting_Classes | <kbd>-</kbd> | <code>oic</code> | <ins>o</ins>ther <ins>i</ins>nteresting <ins>c</ins>lasses | other interesting classes (<ins>-</ins>) |
 | c123 | Nothing_Interesting | <kbd>N</kbd> | <code>noi</code> | <ins>n</ins>othing <ins>o</ins>f <ins>i</ins>nterest | <ins>N</ins>othi<ins>N</ins>g i<ins>N</ins>teresti<ins>N</ins>g |
