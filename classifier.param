@@ -344,6 +344,17 @@
                         ~~ general not in situ reuse (Y)      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    
+    
+    
+    
+    
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
     <!-- FIRST ONE IS TEMPLATE -->
     <!-- The other, classifications (not document pages reused in 
          bindings), like stitching, manicule, iron-gall ink 
@@ -833,7 +844,24 @@
                         ~~ multiple classes (=)      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
-	<Classification id="c123">
+    <Classification id="c102">
+      
+    </Classification> <!-- ENDOF:  id="c102"         ~~
+                        ~~       ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    
+    
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c121">
+      
+    </Classification> <!-- ENDOF:  id="c121"         ~~
+                        ~~       ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+	  <Classification id="c123">
       <DisplayName>Nothing interesting</DisplayName>
 	    <KeyboardShortcut>N</KeyboardShortcut>
 	    <DirectoryName>Nothing_Interesting</DirectoryName>
@@ -848,7 +876,11 @@
                         ~~ Nothing interesting         ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
-	<Classification id="c124">
+  
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  
+  
+	  <Classification id="c124">
       <DisplayName>Do not use</DisplayName>
 	    <KeyboardShortcut>D</KeyboardShortcut>
 	    <DirectoryName>Do_Not_Use</DirectoryName>
