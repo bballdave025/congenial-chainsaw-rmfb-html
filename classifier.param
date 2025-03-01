@@ -845,20 +845,87 @@
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c102">
+      <DisplayName>multiple Binding reuse classes</DisplayName>
+	    <KeyboardShortcut>B</KeyboardShortcut>
+	    <DirectoryName>Multiple_Binding_Reuse_Classes</DirectoryName>
+	    <AddedFilenameEnding>mbr</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
       
     </Classification> <!-- ENDOF:  id="c102"         ~~
-                        ~~       ~~
+                        ~~ multiple Binding reuse classes      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c103">
+      <DisplayName>multiple miXed but all not binding</DisplayName>
+	    <KeyboardShortcut>X</KeyboardShortcut>
+	    <DirectoryName>Multiple_Mixed_But_All_Not_Binding</DirectoryName>
+	    <AddedFilenameEnding>mmx</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c103"         ~~
+                        ~~ multiple miXed but all not binding      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c111">
+      <DisplayName>faKe-out</DisplayName>
+	    <KeyboardShortcut>K</KeyboardShortcut>
+	    <DirectoryName>Fake_Out</DirectoryName>
+	    <AddedFilenameEnding>fko</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c103"         ~~
+                        ~~ faKe-out      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c121">
-      
+      <DisplayName>n0 for binding reuse (0)</DisplayName>
+	    <KeyboardShortcut>0</KeyboardShortcut>
+	    <DirectoryName>No_For_Binding_Reuse</DirectoryName>
+	    <AddedFilenameEnding>noi</AddedFilenameEnding>
+	    <Description>
+	      Image doesn&apos;t fit in any of the binding-reuse classifications above. It might fit into some of the other classifications that I want to work on for my Fragmentology paper. I should be using this one instead of &quot;N&quot;.
+	    </Description>
+	    <Examples>
+	      In other file
+	    </Examples>
     </Classification> <!-- ENDOF:  id="c121"         ~~
-                        ~~       ~~
+                        ~~ n0 for binding reuse (0)      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c122">
+      <DisplayName>other interesting classes (-)</DisplayName>
+	    <KeyboardShortcut>-</KeyboardShortcut>
+	    <DirectoryName>No_Binding_Reuse_But_Other_Interesting_Classes</DirectoryName>
+	    <AddedFilenameEnding>oic</AddedFilenameEnding>
+	    <Description>
+	      Image doesn&apos;t fit in any of the binding-reuse classifications above, but it is one of the other classifications that I want to work on for my Fragmentology paper. Don't spend time searching for these, but note them if you see them. I'll go through these later to classify them.
+	    </Description>
+	    <Examples>
+	      In other file
+	    </Examples>
+    </Classification> <!-- ENDOF:  id="c122"         ~~
+                        ~~ other interesting classes (-)      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
 	  <Classification id="c123">
