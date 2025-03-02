@@ -120,9 +120,9 @@
 		   will become the default directory.             -->
     <DefaultInputDirectory>
       <!--WindowsInPath>C:\Users\bball\Desktop\cropped_document_images_skinny\holder\input\</WindowsInPath-->
-	    <WindowsInPath>D:\Datasets_and_Models\All_for_FHTW_2025\From_2024_Gathering\Mostly_Near_Binding_Pages\input\</WindowsInPath>
-	    <LinuxInPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/input/"</LinuxInPath>
-	    <MacOSInPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/input/"</MacOSInPath>
+	    <WindowsInPath>C:\David\FHTW-2025-All_-_move_2024_get_new\Classification_Folder\input\</WindowsInPath>
+	    <LinuxInPath>"/mnt/c/David/FHTW-2025-All_-_move_2024_get_new/Classification_Folder/input/"</LinuxInPath>
+	    <MacOSInPath>"/mnt/c/David/FHTW-2025-All_-_move_2024_get_new/Classification_Folder/input/"</MacOSInPath>
 	    
 	    <DoRandomizeInputFiles>false</DoRandomizeInputFiles>
       
@@ -137,9 +137,9 @@
 		     run will become the default directory.         -->
 	  <DefaultOutputDirectory>
       <!--WindowsOutPath>C:\Users\bball\Desktop\cropped_document_images_skinny\holder\output\</WindowsOutPath-->
-	    <WindowsOutPath>D:\Datasets_and_Models\All_for_FHTW_2025\From_2024_Gathering\Mostly_Near_Binding_Pages\output\</WindowsOutPath>
-	    <LinuxOutPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/output/"</LinuxOutPath>
-	    <MacOSOutPath>"/mnt/d/Datasets_and_Models/All_for_FHTW_2025/From_2024_Gathering/Mostly_Near_Binding_Pages/output/"</MacOSOutPath>
+	    <WindowsOutPath>C:\David\FHTW-2025-All_-_move_2024_get_new\Classification_Folder\output\</WindowsOutPath>
+	    <LinuxOutPath>"/mnt/c/David/FHTW-2025-All_-_move_2024_get_new/Classification_Folder/output/"</LinuxOutPath>
+	    <MacOSOutPath>"/mnt/c/David/FHTW-2025-All_-_move_2024_get_new/Classification_Folder/output/"</MacOSOutPath>
 	  
 	  </DefaultOutputDirectory>
 	
@@ -313,7 +313,7 @@
     
     
     <Classification id="c10">
-      <DisplayName>wrapper reuse (4)</DisplayName>
+      <DisplayName>wrapper reuse</DisplayName>
 	    <KeyboardShortcut>4</KeyboardShortcut>
 	    <DirectoryName>Wrapper_Reuse</DirectoryName>
 	    <AddedFilenameEnding>wpr</AddedFilenameEnding>
@@ -325,12 +325,12 @@
 	    </Examples>
       
     </Classification> <!-- ENDOF:  id="c10"       ~~
-                        ~~ wrapper reuse (4)      ~~
+                        ~~ wrapper reuse      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c15">
-      <DisplayName>general not in situ reuse (Y)</DisplayName>
-	    <KeyboardShortcut>Y</KeyboardShortcut>
+      <DisplayName>general not in situ reuse</DisplayName>
+	    <KeyboardShortcut>J</KeyboardShortcut>
 	    <DirectoryName>General_Not_In_Situ_Reuse</DirectoryName>
 	    <AddedFilenameEnding>gni</AddedFilenameEnding>
 	    <Description>
@@ -341,7 +341,7 @@
 	    </Examples>
       
     </Classification> <!-- ENDOF:  id="c15"                   ~~
-                        ~~ general not in situ reuse (Y)      ~~
+                        ~~ general not in situ reuse      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
@@ -829,7 +829,7 @@
     
     
     <Classification id="c101">
-      <DisplayName>multiple classes (=)</DisplayName>
+      <DisplayName>multiple classes</DisplayName>
 	    <KeyboardShortcut>=</KeyboardShortcut>
 	    <DirectoryName>Multiple_Classes</DirectoryName>
 	    <AddedFilenameEnding>mcl</AddedFilenameEnding>
@@ -841,24 +841,91 @@
 	    </Examples>
       
     </Classification> <!-- ENDOF:  id="c101"         ~~
-                        ~~ multiple classes (=)      ~~
+                        ~~ multiple classes      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c102">
+      <DisplayName>multiple Binding reuse classes</DisplayName>
+	    <KeyboardShortcut>B</KeyboardShortcut>
+	    <DirectoryName>Multiple_Binding_Reuse_Classes</DirectoryName>
+	    <AddedFilenameEnding>mbr</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
       
     </Classification> <!-- ENDOF:  id="c102"         ~~
-                        ~~       ~~
+                        ~~ multiple Binding reuse classes      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c103">
+      <DisplayName>multiple miXed but all not binding</DisplayName>
+	    <KeyboardShortcut>X</KeyboardShortcut>
+	    <DirectoryName>Multiple_Mixed_But_All_Not_Binding</DirectoryName>
+	    <AddedFilenameEnding>mmx</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c103"         ~~
+                        ~~ multiple miXed but all not binding      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c111">
+      <DisplayName>faKe-out</DisplayName>
+	    <KeyboardShortcut>K</KeyboardShortcut>
+	    <DirectoryName>Fake_Out</DirectoryName>
+	    <AddedFilenameEnding>fko</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c103"         ~~
+                        ~~ faKe-out      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c121">
-      
+      <DisplayName>n0 for binding reuse</DisplayName>
+	    <KeyboardShortcut>0</KeyboardShortcut>
+	    <DirectoryName>No_For_Binding_Reuse</DirectoryName>
+	    <AddedFilenameEnding>nbr</AddedFilenameEnding>
+	    <Description>
+	      Image doesn&apos;t fit in any of the binding-reuse classifications above. It might fit into some of the other classifications that I want to work on for my Fragmentology paper. I should be using this one instead of &quot;N&quot;.
+	    </Description>
+	    <Examples>
+	      In other file
+	    </Examples>
     </Classification> <!-- ENDOF:  id="c121"         ~~
-                        ~~       ~~
+                        ~~ n0 for binding reuse      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <Classification id="c122">
+      <DisplayName>other interesting classes</DisplayName>
+	    <KeyboardShortcut>-</KeyboardShortcut>
+	    <DirectoryName>No_Binding_Reuse_But_Other_Interesting_Classes</DirectoryName>
+	    <AddedFilenameEnding>oic</AddedFilenameEnding>
+	    <Description>
+	      Image doesn&apos;t fit in any of the binding-reuse classifications above, but it is one of the other classifications that I want to work on for my Fragmentology paper. Don't spend time searching for these, but note them if you see them. I'll go through these later to classify them.
+	    </Description>
+	    <Examples>
+	      In other file
+	    </Examples>
+    </Classification> <!-- ENDOF:  id="c122"         ~~
+                        ~~ other interesting classes      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
 	  <Classification id="c123">
