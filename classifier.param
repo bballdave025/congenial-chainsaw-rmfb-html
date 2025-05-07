@@ -891,10 +891,26 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c103"         ~~
+    </Classification> <!-- ENDOF:  id="c111"         ~~
                         ~~ faKe-out      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
+    
+    <Classification id="c112">
+      <DisplayName>important as counter-example</DisplayName>
+	    <KeyboardShortcut>Z</KeyboardShortcut>
+	    <DirectoryName>Important_as_Counter_Example</DirectoryName>
+	    <AddedFilenameEnding>iac</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c102"         ~~
+                        ~~ multiple Binding reuse classes      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
