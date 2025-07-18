@@ -180,8 +180,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c1"            ~~
-                        ~~ Outside cover reuse        ~~
+    </Classification> <!-- ENDOF:  id="c1"             ~~
+                        ~~ Outside cover reuse         ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	  <Classification id="c2">
@@ -196,8 +196,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c2"            ~~
-                        ~~ unDer cover reuse          ~~
+    </Classification> <!-- ENDOF:  id="c2"             ~~
+                        ~~ unDer cover reuse           ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	  <Classification id="c3">
@@ -212,8 +212,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c3"            ~~
-                        ~~ sPine protection reuse     ~~
+    </Classification> <!-- ENDOF:  id="c3"             ~~
+                        ~~ sPine protection reuse      ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	  
     <Classification id="c4">
@@ -228,8 +228,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c4"            ~~
-                        ~~ Front-back matter reuse    ~~
+    </Classification> <!-- ENDOF:  id="c4"             ~~
+                        ~~ Front-back matter reuse     ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <!--Classification id="c5">
@@ -243,8 +243,8 @@
 	    <Examples>
         In other file
 	    </Examples>
-    </Classification--> <!-- ENDOF:  id="c5"            ~~
-                          ~~ one beHind reuse           ~~
+    </Classification--> <!-- ENDOF:  id="c5"           ~~
+                          ~~ one beHind reuse          ~~
                           ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c6">
@@ -259,9 +259,9 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c6"            ~~
-                        ~~ cover Wraparound reuse     ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </Classification> <!-- ENDOF:  id="c6"             ~~
+                        ~~ cover Wraparound reuse      ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c7">
       <DisplayName>Tiny background reuse</DisplayName>
@@ -275,8 +275,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c7"            ~~
-                        ~~ Tiny background reuse      ~~
+    </Classification> <!-- ENDOF:  id="c7"             ~~
+                        ~~ Tiny background reuse       ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c8">
@@ -291,8 +291,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c8"                ~~
-                        ~~ Connecting or guard reuse      ~~
+    </Classification> <!-- ENDOF:  id="c8"             ~~
+                        ~~ Connecting or guard reuse   ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c9">
@@ -307,9 +307,9 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c9"               ~~
-                        ~~ across book Gutter reuse      ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </Classification> <!-- ENDOF:  id="c9"             ~~
+                        ~~ across book Gutter reuse    ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
     <Classification id="c10">
@@ -324,8 +324,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c10"       ~~
-                        ~~ wrapper reuse      ~~
+    </Classification> <!-- ENDOF:  id="c10"            ~~
+                        ~~ wrapper reuse               ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c15">
@@ -341,8 +341,8 @@
 	    </Examples>
       
     </Classification> <!-- ENDOF:  id="c15"                   ~~
-                        ~~ general not in situ reuse      ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        ~~ general not in situ reuse   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -840,8 +840,8 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c101"         ~~
-                        ~~ multiple classes      ~~
+    </Classification> <!-- ENDOF:  id="c101"           ~~
+                        ~~ multiple classes            ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <Classification id="c102">
@@ -856,9 +856,10 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c102"         ~~
-                        ~~ multiple Binding reuse classes      ~~
+    </Classification> <!-- ENDOF:  id="c102"              ~~
+                        ~~ multiple Binding reuse classes ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
     
     <Classification id="c103">
       <DisplayName>multiple miXed but all not binding</DisplayName>
@@ -872,9 +873,9 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c103"         ~~
-                        ~~ multiple miXed but all not binding      ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </Classification> <!-- ENDOF:  id="c103"                  ~~
+                        ~~ multiple miXed but all not binding ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -891,9 +892,9 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c111"         ~~
-                        ~~ faKe-out      ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </Classification> <!-- ENDOF:  id="c111"           ~~
+                        ~~ faKe-out          ~~
+                        ~~ ~~~~~~~~~~~~~~~~~ -->
     
     
     <Classification id="c112">
@@ -908,9 +909,26 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c102"         ~~
-                        ~~ multiple Binding reuse classes      ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </Classification> <!-- ENDOF:  id="c112"            ~~
+                        ~~ important as counter-example ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    
+    <Classification id="c113">
+      <DisplayName>somewHat uneasy with or hard</DisplayName>
+	    <KeyboardShortcut>H</KeyboardShortcut>
+	    <DirectoryName>Somewhat_Uneasy_with_Class_or_Hard</DirectoryName>
+	    <AddedFilenameEnding>suh</AddedFilenameEnding>
+	    <Description>
+	      In other file
+	    </Description>
+	    <Examples>
+        In other file
+	    </Examples>
+      
+    </Classification> <!-- ENDOF:  id="c113"            ~~
+                        ~~ somewhat uneasy with or Hard ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
@@ -920,7 +938,13 @@
 	    <DirectoryName>No_For_Binding_Reuse</DirectoryName>
 	    <AddedFilenameEnding>nbr</AddedFilenameEnding>
 	    <Description>
-	      Image doesn&apos;t fit in any of the binding-reuse classifications above. It might fit into some of the other classifications that I want to work on for my Fragmentology paper. I should be using this one instead of &quot;N&quot;.
+	      Image doesn&apos;t fit in any of the binding-reuse 
+        classifications above. It might fit into some of the other 
+        classifications that I want to work on for my Fragmentology 
+        paper. I should be using this one instead of &quot;N&quot;. 
+        Whenever there isn&apos;t binding reuse, this class is used 
+        to show that the image has been inspected, but it has not 
+        been found to belong to any of the reuse classifications.
 	    </Description>
 	    <Examples>
 	      In other file
@@ -935,14 +959,19 @@
 	    <DirectoryName>No_Binding_Reuse_But_Other_Interesting_Classes</DirectoryName>
 	    <AddedFilenameEnding>oic</AddedFilenameEnding>
 	    <Description>
-	      Image doesn&apos;t fit in any of the binding-reuse classifications above, but it is one of the other classifications that I want to work on for my Fragmentology paper. Don't spend time searching for these, but note them if you see them. I'll go through these later to classify them.
+	      Image doesn&apos;t fit in any of the binding-reuse 
+        classifications above, but it is one of the other 
+        classifications that I want to work on for my Fragmentology 
+        paper. Don&apos;t spend time searching for these, but note 
+        them if you see them. I&apos;ll go through these later to 
+        classify them.
 	    </Description>
 	    <Examples>
 	      In other file
 	    </Examples>
-    </Classification> <!-- ENDOF:  id="c122"         ~~
-                        ~~ other interesting classes      ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </Classification> <!-- ENDOF:  id="c122"           ~~
+                        ~~ other interesting classes   ~~
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
 	  <Classification id="c123">
       <DisplayName>Nothing interesting</DisplayName>
@@ -950,7 +979,10 @@
 	    <DirectoryName>Nothing_Interesting</DirectoryName>
 	    <AddedFilenameEnding>noi</AddedFilenameEnding>
 	    <Description>
-	      Image doesn&apos;t have any of the characteristics above. It will be a false for all. This classification is used to show that the image has been inspected, but it has not been found to belong to any of the classifications.
+	      Image doesn&apos;t have any of the characteristics above. 
+        It will be a false for all. This classification is used to 
+        show that the image has been inspected, but it has not been 
+        found to belong to any of the classifications.
 	    </Description>
 	    <Examples>
 	      In other file
@@ -969,7 +1001,8 @@
 	    <DirectoryName>Do_Not_Use</DirectoryName>
 	    <AddedFilenameEnding>dnu</AddedFilenameEnding>
 	    <Description>
-	      Something that you think would throw off the model, or something you&apos;re really not sure about.
+	      Something that you think would throw off the model, or 
+        something you&apos;re really not sure about.
 	    </Description>
 	    <Examples>
 		    In other file
