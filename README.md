@@ -76,6 +76,69 @@ Blank space for notes
 
 ## Short view of classifications
 
+### Smallest Classification Instructions — (Readable / Printable)
 
+| c? | Classification Directory Name | Kbd 1 lett | 3 letters | Any Mnemonic Explanation | Shows Up As |
+|---|---|---|---|---|---|
+| c1 | Outside_Cover_Reuse | O | orc | Don't want to confuse optical character recognition, so outside reuse cover | Outside cover reuse |
+| c2 | Under_Cover_Reuse | R | ucr | Initialism | undeR coveR reuse |
+| c3 | Spine_Protection_Reuse | P | spr | Initialism | sPine Protection reuse |
+| c4 | Front-back_Matter_Reuse | F | fmr | front matter reuse | Front-back matter reuse |
+| c5 | One_Behind_Reuse  \nN.B. Won't be 'H' | H | obr | Initialism  \nTRYING WITHOUT THIS FOR FHTW 2025 | one beHind reuse |
+| c6 | Cover_Wraparound_Reuse | W | cwa | cover wraparound cover | Wraparound reuse |
+| c7 | Tiny_Background_Reuse | T | tbr | Initialism |  |
+| c8 | Connecting_or_Guard_Reuse | C | scg | small connecting or guard | Connecting or guard reuse |
+| c9 | Across_Book_Gutter_Reuse  \n(Note this includes across-book-gutter OIC; dir name to change after project) | G | abg | across book gutter | across book Gutter reuse |
+| c10 | Wrapper_Reuse | 4 | wpr | wrapper | wrapper reuse (4) |
+| c? | Classification Directory Name | Kbd 1 lett | 3 letters | Any Mnemonic Explanation | Shows Up As |
+| %c11 | Not_In_Situ_Reuse_Cover | V | nsc | not in situ reuse cover | %%%% TO %%%% |
+| %c12 | Not_In_Situ_Reuse_Front-back | A | nsf | not in situ reuse front-back | %%%% BE %%%% |
+| %c13 | Not_In_Situ_Reuse_Spine_Protection | 9 | nsp | not in situ reuse (s)pine | %%% COMB- %% |
+| %c14 | Not_In_Situ_Reuse_Small_Connecting_Guard | 7 | nst | not in situ reuse connecting like (s)trap; 7 like a backwards gamma -> G sound -> Guard | %%% INED %%%% |
+| c15 | General_Not_In_Situ_Reuse | Y | gni | general not in situ reuse; Y as in whY are these so difficult? |  |
+| ... | ... | ... | ... | Perhaps more, one day ... | ... |
+| c101 | Multiple_Classes | = | mcl | multiple classes | multiple classes (=) |
+| c102 | Multiple_Binding_Reuse_Classes | B | mbr | multiple binding reuse | multiple Binding reuse classes |
+| c103 | Multiple_Mixed_But_All_Not_Binding | X | mmx | multiple mixed (the x can help you think of not binding; the word, binding, x-ed out) | multiple miXed but all not binding |
+| ... | ... | ... | ... | Maybe multiple more, but idk. | ... |
+| c? | Classification Directory Name | Kbd 1 lett | 3 letters | Any Mnemonic Explanation | Shows Up As |
+| c111 | Fake_Out | K | fko | fake-out | faKe-out |
+| c112 | Important_as_Counter_Example  \n(could also be called ... as contrast, often, has a structure that would be a class, but no information of the surface) | Z | iac |  |  |
+| c113 | Somewhat_Uneasy_with_Classification_or_Hard  \n[Initially considered Uneasy_with_Positive but decided wider class (possibly including negatives) with those I find or that I think the algorithm will find hard] | H | suh | somewhat uneasy hard |  |
+| ... | ... | ... | ... | ... | ... |
+| c121 | No_For_Binding_Reuse | 0 | nbr | no for-binding reuse | n0 for binding reuse (0) |
+| c122 | No_Binding_Reuse_but_Other_Interesting_Classes | - | oic | other interesting classes | other interesting classes (-) |
+| c123 | Nothing_Interesting | N | noi | nothing of interest | NothiNg iNterestiNg |
+| c124 | Do_Not_Use | D | dnu | Initialism | Do not use |
+| c125 | Unsure | U |  | no addition is given, so that when someone else checks the image, they can classify it however is needed | UnsUre |
+| ... | ... | ... | ... | Likely not many (or none) after this. | ... |
 
+**Notes:** Contains only the classes used for the fragments-in-bindings study for the Family History Technology Workshop in 2025. At the moment, I'm leaving the "one beHind reuse" class out of the FHTW 2025 parameter file, though that might change.
 
+### Other classes to be used later in Manuscript Studies things
+
+| Possible number / Dir Name | three-letters |
+|---|---|
+| c50 / Stitching_Any_Type | stc |
+| Should later be moved into one of the following three |  |
+| c51 / Stitching_Level_1 | st1 |
+| (parchment maker, basic repairs with twine, no-longer-there veil stitch holes, ... anything else I think of) |  |
+| c52 / Stitching_Level_2 | st2 |
+| (beyond basic twine, hole stitch, not embroidery, baseball stitch, green Vs, ... other things maybe) |  |
+| c53 / Stitching_Level_3_Embroidery_etc | st3 |
+| (Embroidery, in-place veils, other fancy, ... and blah and blah and blah) |  |
+| c54 / Manicule | man |
+| c55 / Non_Manicule_Nota_Bene | nmn |
+| c56 / Fingerprint | fgp |
+| (Has to have loops/whirls, or at least visual separation between the grooves ... any other details) |  |
+| c57 / Hair_on_parchment | hop |
+| (Meaning animal hair, like in the holes of the parchment, or even still looking like fur/wool on a used page) |  |
+| c58 / Very_Visible_Watermark | vvw |
+| c59 / Not_For_Binding_Reuse | nfb |
+| c60 / Iron_Gall_or_other_Corrosion_Thru | igt |
+| c61 / Squished_Bug_Remains | sbr |
+| c62 / Alphabet_or_Pen_Trials_or_Counting | apc |
+
+Other classification ideas, as well as more details about and several image examples for the main reuse document classifications are in the repo files
+
+---
