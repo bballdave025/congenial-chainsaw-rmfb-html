@@ -913,7 +913,18 @@
                         ~~ important as counter-example ~~
                         ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
-    
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~  DWB, 2026-10-03
+      ~~  Deprecated classification: suh 
+      ~~  (c113, Somewhat_Uneasy_with_Classification_or_Hard) is not part
+      ~~  of the current RMMFB/Fragmentology-2026 (previously 
+      ~~  RMFB/FHTW2025) classification scheme. It had been omitted from
+      ~~  the active FHTW2025 classification helper by 2025-03-01. Some 
+      ~~  historical filenames in the frozen 3,331-image corpus retain 
+      ~~  the _suh token; these filenames are preserved for provenance, 
+      ~~  and suh is ignored when deriving current labels.
+      ~~
     <Classification id="c113">
       <DisplayName>somewHat uneasy with or hard</DisplayName>
 	    <KeyboardShortcut>H</KeyboardShortcut>
@@ -926,9 +937,11 @@
         In other file
 	    </Examples>
       
-    </Classification> <!-- ENDOF:  id="c113"            ~~
+    </Classification> <!~~ ENDOF:  id="c113"            ~~
                         ~~ somewhat uneasy with or Hard ~~
-                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~>
+
+                       End of the message about deprecated classification. -->
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
