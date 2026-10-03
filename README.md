@@ -11,6 +11,13 @@
 (RMFB) is 
 <strong>R</strong>eused <strong>I</strong>nformation <strong>B</strong>earing <strong>Wri</strong>ting <strong>S</strong>urface <strong>T</strong>races <strong>in</strong> <strong>Bin</strong>-<strong>Din</strong>-gs (rib-wrist-in-bin-din).
 
+**Edit (2026-10-03)**: The short-form name has now been changed to RMMFB (pronounced R double-M F B,) for
+**R**eused 
+**M**anuscript and
+**M**achine-created
+**F**ragments in 
+**B**indings, 
+
 ## A bit of vision
 
 Taken from a Jupyter notebook,
@@ -104,7 +111,7 @@ Blank space for notes
 | c? | Classification Directory Name | Kbd 1 lett | 3 letters | Any Mnemonic Explanation | Shows Up As |
 | c111 | Fake_Out | K | fko | fake-out | faKe-out |
 | c112 | Important_as_Counter_Example  \n(could also be called ... as contrast, often, has a structure that would be a class, but no information of the surface) | Z | iac |  |  |
-| c113 | Somewhat_Uneasy_with_Classification_or_Hard  \n[Initially considered Uneasy_with_Positive but decided wider class (possibly including negatives) with those I find or that I think the algorithm will find hard] | H | suh | somewhat uneasy hard |  |
+| <sup>†</sup>~~c113~~ | <sup>†</sup>~~Somewhat_Uneasy_with_Classification_or_Hard  \n~~ ~~<sup>†</sup>[Initially considered Uneasy_with_Positive but decided wider class (possibly including negatives) with those I find or that I think the algorithm will find hard]~~\n<sup>†</sup>See description after the table, specifically _§More Notes, Edit (2026-10-03)_ | <sup>†</sup>~~H~~ | <sup>†</sup>~~suh~~ | <sup>†</sup>~~somewhat uneasy hard~~ | <sup>†</sup> |
 | ... | ... | ... | ... | ... | ... |
 | c121 | No_For_Binding_Reuse | 0 | nbr | no for-binding reuse | n0 for binding reuse (0) |
 | c122 | No_Binding_Reuse_but_Other_Interesting_Classes | - | oic | other interesting classes | other interesting classes (-) |
@@ -114,6 +121,10 @@ Blank space for notes
 | ... | ... | ... | ... | Likely not many (or none) after this. | ... |
 
 **Notes:** Contains only the classes used for the fragments-in-bindings study for the Family History Technology Workshop in 2025. At the moment, I'm leaving the "one beHind reuse" class out of the FHTW 2025 parameter file, though that might change.
+
+**More Notes, Edit (2026-10-03)**: The continuing studies after the inability to go to FHTW 2025 are using the same procedures as noted here, especially as work is done towards a submission to the 2026 [_Fragmentology_](https://www.fragmentology.ms/).
+
+**†** Deprecated classification: `suh` (`c113`, _Somewhat_Uneasy_with_Classification_or_Hard_) is not part of the current RMMFB/Fragmentology-2026 (previously RMFB/FHTW2025) classification scheme. It had been omitted from the active FHTW2025 classification helper by 2025-03-01. Some historical filenames in the frozen 3,331-image corpus retain the `_suh` token; these filenames are preserved for provenance, and `suh` is ignored when deriving current labels. (Continuation of 2026-10-03 Notes)
 
 ### Other classes to be used later in Manuscript Studies things
 
