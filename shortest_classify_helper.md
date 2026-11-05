@@ -52,3 +52,11 @@
 | ...  | ... | ... | ... | Likely not many (or none) after this. | ... |
 
 Notes: Contains all classes that I'm seriously considering using before the Fragmentology paper submission. I might not use the cover, front matter, etc. without reuse classes, though.
+
+**Multiple-class tags (clarified 2026-11-05):** `mcl` means at least one
+binding-reuse class plus at least one other interesting class; `mbr` means
+more than one binding-reuse class; `mmx` means more than one other interesting
+class with no binding-reuse class. `mcl` and `mbr` may coexist in either order.
+`mmx` does not combine with either. "OIC" as a kind of phenomenon does not
+require a literal `oic` token on a reuse-positive image.
+See [meanings, combinations, and the filename check](README.md#meaning-and-combinations-of-mcl-mbr-and-mmx).
