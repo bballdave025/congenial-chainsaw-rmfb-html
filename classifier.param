@@ -834,8 +834,11 @@
 	    <DirectoryName>Multiple_Classes</DirectoryName>
 	    <AddedFilenameEnding>mcl</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        At least one binding-reuse class and at least one other interesting
+        class (OIC), such as stitching or fingerprints. May coexist with mbr
+        when more than one binding-reuse class is present. Does not combine
+        with mmx. The mcl tag alone does not identify the other phenomenon.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -850,8 +853,10 @@
 	    <DirectoryName>Multiple_Binding_Reuse_Classes</DirectoryName>
 	    <AddedFilenameEnding>mbr</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        More than one binding-reuse class. May coexist with mcl, in either
+        filename order, when another interesting class is also present.
+        Does not combine with mmx.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -867,8 +872,10 @@
 	    <DirectoryName>Multiple_Mixed_But_All_Not_Binding</DirectoryName>
 	    <AddedFilenameEnding>mmx</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        More than one other interesting class (OIC), with no binding-reuse
+        class. Does not combine with mcl or mbr. If binding reuse and multiple
+        other interesting classes coexist, use mcl and, if applicable, mbr.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -978,7 +985,11 @@
         paper. Don&apos;t spend time searching for these, but note 
         them if you see them. I&apos;ll go through these later to 
         classify them.
-	    </Description>
+
+        Other interesting phenomena may also coexist with binding reuse;
+        that combination is represented by mcl. Absence of a literal oic
+        token therefore does not establish absence of these phenomena.
+      </Description>
 	    <Examples>
 	      In other file
 	    </Examples>

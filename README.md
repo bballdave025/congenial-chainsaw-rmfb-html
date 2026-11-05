@@ -126,6 +126,38 @@ Blank space for notes
 
 **†** Deprecated classification: `suh` (`c113`, _Somewhat_Uneasy_with_Classification_or_Hard_) is not part of the current RMMFB/Fragmentology-2026 (previously RMFB/FHTW2025) classification scheme. It had been omitted from the active FHTW2025 classification helper by 2025-03-01. Some historical filenames in the frozen 3,331-image corpus retain the `_suh` token; these filenames are preserved for provenance, and `suh` is ignored when deriving current labels. (Continuation of 2026-10-03 Notes)
 
+### Meaning and combinations of `mcl`, `mbr`, and `mmx`
+
+Clarified by David BLACK on 2026-11-05. Here, **other interesting classes
+(OIC)** means phenomena beyond binding reuse, such as stitching or fingerprints.
+This concept is broader than the literal `oic` filename token.
+
+| Code | Meaning |
+|---|---|
+| `mcl` (c101) | At least one binding-reuse class **and** at least one other interesting class. |
+| `mbr` (c102) | More than one binding-reuse class. May coexist with `mcl`. |
+| `mmx` (c103) | More than one other interesting class, with **no binding-reuse class**. |
+| `oic` (c122) | Other interesting class(es), with no binding-reuse class; does not identify which phenomenon is present. |
+
+`mcl` and `mbr` may occur together, in either order: an image can show multiple
+binding-reuse classes and another interesting phenomenon. `mmx` does not
+combine with either `mcl` or `mbr`. An image with binding reuse and multiple
+other interesting phenomena uses `mcl` (and, if applicable, `mbr`), not `mmx`.
+
+These are meanings of the tags, not instructions to rewrite historical
+filenames or directory names. The particular other phenomenon is not fully
+specified by `mcl` or `mmx`: neither tag alone establishes stitching. Conversely,
+the absence of a literal `oic` token does not establish the absence of
+stitching or other interesting phenomena.
+
+**Filename check (2026-11-05):** In the inspected
+`consistentized_3331_dataset.txt` inventory, 28 filenames contain both `mcl`
+and `mbr` (24 with `mcl` first, four with `mbr` first). None combines
+`mcl` with `mmx`, or `mbr` with `mmx`. Tokens were checked in each
+filename stem, separated by underscores, regardless of order or intervening
+tags. This confirms the observed filename combinations, not the correctness
+of every image's visual classification.
+
 ### Other classes to be used later in Manuscript Studies things
 
 | Possible number / Dir Name | three-letters |
