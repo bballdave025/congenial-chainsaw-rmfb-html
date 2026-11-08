@@ -349,3 +349,13 @@ Parsed non-comment XML is unchanged. Local Markdown links resolve, repaired
 HTML wrappers balance, and `git diff --check` passes. The inventory check used
 the audit-matching SHA-256 above. This validation does not certify every visual
 example or resolve the historical wrapper caption discrepancy.
+
+## Subsequent quality-provenance note
+
+David reported a substantially degraded PDF → PNG → JPG conversion batch,
+probably confined to Utrecht but spanning multiple source PDFs/shelfmarks.
+The exact example and provisional provenance are recorded in
+[the important quality explanation](docs/dev_notes/FIXME_TODO_important_quality_explanation.md).
+The supplied derivative is retained as evidence; the processing command and
+full batch membership remain unverified. This is a processing-provenance
+issue, not a new classification rule or a request to replace frozen images.
