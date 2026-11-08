@@ -1,5 +1,68 @@
 # congenial-chainsaw-rmfb-html
-~~HTML~~ Microsoft Word saved as PDF that exposes the XML used in the classifier, allowing the descriptions and examples to be more-easily seen. It will be a good guide for me to remember which things I want classified in which way (and thus to be consistent). It will also track the classification changes and addenda that always come with such classification projects
+Classification ontology and illustrated annotation guides for RMMFB, maintained as Microsoft Word documents with PDF exports, an XML classifier configuration, and concise Markdown references.
+
+## Current guide format and annotation convention
+
+The maintained instructional workflow is **Microsoft Word source to PDF**.
+The HTML presentation was abandoned because its implementation and upkeep
+exceeded the needs of these classification guides. The Word/PDF workflow
+was quicker to maintain and kept the instructions focused on the basics.
+`classifier.param.html` and the HTML development example under
+`code_screenshots_and_text_snippets` remain as historical artifacts.
+
+### Binding context and a shared original writing surface
+
+For the current RMMFB MVP experiments and publication, classify visible
+reuse by its binding context and how the information is exposed.
+Regions of one original writing surface can receive different reuse
+classes when seen as an outer cover, an exposed underside, or spine
+protection. Several applicable classes do not imply several original
+leaves or fragments.
+
+A turned-over cover corner can expose UCR without a tear. Earlier
+information visible through an exterior cover is ORC; the analogous
+visibility through front/back matter is FMR within that class's scope.
+Apply SPR to the spine-protection context. These are annotation
+conventions; any expected improvement in learning or generalization is
+a separate research hypothesis.
+
+The [dated classification addendum](CLASSIFICATION_CONTEXT_ADDENDUM.md)
+sets out the rule and examples, including the existing multiple-class
+exceptions. It is intended as an appendix in the fuller illustrated guide,
+`Simple_Classifications_-_1-or-2-pg_each.docx`, followed by PDF export.
+The source-ID guide will retain its historical substance with an outdated-
+instructions footer; the smallest printable guide needs consistency edits.
+The current Word/PDF files have not yet been regenerated. Later ontology versions may revise the rule
+with a recorded rationale; retain the convention used for each experiment.
+
+### Version provenance
+
+The November 8 addendum explains an existing procedure; it does not change
+the annotation rules or reset their earlier procedural lock. The reviewed
+repository baseline is commit
+[`c8402b403055774d9eb7732952ad13c80d92b83f`](https://github.com/bballdave025/congenial-chainsaw-rmfb-html/tree/c8402b403055774d9eb7732952ad13c80d92b83f).
+This is an explicit documentation snapshot recorded on November 8, 2026,
+not a claim that this was the original freeze commit. The exact earlier
+lock date/commit was not recovered in the cross-repository review.
+
+See [ontology and guide provenance](ONTOLOGY_PROVENANCE.md) for the dated
+evidence, the distinction between the two illustrated guides, and the
+remaining Word/PDF synchronization work.
+
+See the [November 8 guide consistency review](GUIDE_CONSISTENCY_REVIEW_2026-11-08.md)
+for the complete findings, proposed filenames, appendix text, and author
+edit checklist. `classifier.param` is authoritative for current keyboard
+shortcuts; in particular, `gni` uses **J**, not the older **Y** shown in the
+PDFs. Historical source captions and superseded instructions remain evidence
+of earlier guide versions, not an instruction to relabel the frozen dataset.
+
+**Current experiment scope (2026-11-08):** David has chosen to exclude wrapper
+examples and the wrapper prediction output for the MVP. The ontology's c10
+definition remains historical/current annotation documentation; experiment
+selection and target configuration are separate. The reviewed 3,331-entry
+inventory has no `wpr` tokens or `Wrapper_Reuse` paths. This filename check
+does not guarantee that no unrecognized wrapper is present in the images.
+See the review for the guide examples and the exclusion-record procedure.
 
 ## Reused Manuscript Fragments in Bindings - for the short and not-quite-complete version.
 
@@ -102,7 +165,7 @@ Blank space for notes
 | %c12 | Not_In_Situ_Reuse_Front-back | A | nsf | not in situ reuse front-back | %%%% BE %%%% |
 | %c13 | Not_In_Situ_Reuse_Spine_Protection | 9 | nsp | not in situ reuse (s)pine | %%% COMB- %% |
 | %c14 | Not_In_Situ_Reuse_Small_Connecting_Guard | 7 | nst | not in situ reuse connecting like (s)trap; 7 like a backwards gamma -> G sound -> Guard | %%% INED %%%% |
-| c15 | General_Not_In_Situ_Reuse | Y | gni | general not in situ reuse; Y as in whY are these so difficult? |  |
+| c15 | General_Not_In_Situ_Reuse | J | gni | general not in situ reuse; key follows classifier.param |  |
 | ... | ... | ... | ... | Perhaps more, one day ... | ... |
 | c101 | Multiple_Classes | = | mcl | multiple classes | multiple classes (=) |
 | c102 | Multiple_Binding_Reuse_Classes | B | mbr | multiple binding reuse | multiple Binding reuse classes |
@@ -114,7 +177,7 @@ Blank space for notes
 | <sup>†</sup>~~c113~~ | <sup>†</sup>~~Somewhat_Uneasy_with_Classification_or_Hard  \n~~ ~~<sup>†</sup>[Initially considered Uneasy_with_Positive but decided wider class (possibly including negatives) with those I find or that I think the algorithm will find hard]~~\n<sup>†</sup>See description after the table, specifically _§More Notes, Edit (2026-10-03)_ | <sup>†</sup>~~H~~ | <sup>†</sup>~~suh~~ | <sup>†</sup>~~somewhat uneasy hard~~ | <sup>†</sup> |
 | ... | ... | ... | ... | ... | ... |
 | c121 | No_For_Binding_Reuse | 0 | nbr | no for-binding reuse | n0 for binding reuse (0) |
-| c122 | No_Binding_Reuse_but_Other_Interesting_Classes | - | oic | other interesting classes | other interesting classes (-) |
+| c122 | No_Binding_Reuse_But_Other_Interesting_Classes | - | oic | other interesting classes | other interesting classes (-) |
 | c123 | Nothing_Interesting | N | noi | nothing of interest | NothiNg iNterestiNg |
 | c124 | Do_Not_Use | D | dnu | Initialism | Do not use |
 | c125 | Unsure | U |  | no addition is given, so that when someone else checks the image, they can classify it however is needed | UnsUre |
@@ -185,3 +248,4 @@ of every image's visual classification.
 Other classification ideas, as well as more details about and several image examples for the main reuse document classifications are in the repo files
 
 ---
+
