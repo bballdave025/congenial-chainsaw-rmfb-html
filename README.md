@@ -1,6 +1,38 @@
 # congenial-chainsaw-rmfb-html
 ~~HTML~~ Microsoft Word saved as PDF that exposes the XML used in the classifier, allowing the descriptions and examples to be more-easily seen. It will be a good guide for me to remember which things I want classified in which way (and thus to be consistent). It will also track the classification changes and addenda that always come with such classification projects
 
+## Current guide format and annotation convention
+
+The maintained instructional workflow is **Microsoft Word source to PDF**.
+The HTML presentation was abandoned because its implementation and upkeep
+exceeded the needs of these classification guides. The Word/PDF workflow
+was quicker to maintain and kept the instructions focused on the basics.
+`classifier.param.html` and the HTML development example under
+`code_screenshots_and_text_snippets` remain as historical artifacts.
+
+### Binding context and a shared original writing surface
+
+For the current RMMFB MVP experiments and publication, classify visible
+reuse by its binding context and how the information is exposed.
+Regions of one original writing surface can receive different reuse
+classes when seen as an outer cover, an exposed underside, or spine
+protection. Several applicable classes do not imply several original
+leaves or fragments.
+
+A turned-over cover corner can expose UCR without a tear. Earlier
+information visible through an exterior cover is ORC; the analogous
+visibility through front/back matter is FMR within that class's scope.
+Apply SPR to the spine-protection context. These are annotation
+conventions; any expected improvement in learning or generalization is
+a separate research hypothesis.
+
+The [dated classification addendum](CLASSIFICATION_CONTEXT_ADDENDUM.md)
+sets out the rule and examples. It is intended to be appended to each
+maintained Word guide and carried into the next PDF export, preserving
+the existing page structure. The current Word/PDF files have not yet
+been regenerated with it. Later ontology versions may revise the rule
+with a recorded rationale; retain the convention used for each experiment.
+
 ## Reused Manuscript Fragments in Bindings - for the short and not-quite-complete version.
 
 ~~Maybe I'll change the name to be more accurate.~~ The more accurate name, which is still not used as much as 

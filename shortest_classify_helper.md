@@ -1,5 +1,9 @@
 # shortest_classify_helper.md
 
+For the current study convention on binding context, shared writing surfaces,
+and folded-back or show-through cases, see the
+[2026-11-08 classification addendum](CLASSIFICATION_CONTEXT_ADDENDUM.md).
+
 | c? | Classification Directory Name | Keyboard Key to Use | File-ending Three Letters | Any Mnemonic Explanation | Shows Up As |
 |------|---|---|---|---|---|
 | c1   | Outside_Cover_Reuse | <kbd>O</kbd> | <code>orc</code> | Don't want to confuse optical character recognition, so <ins>o</ins>utside <ins>r</ins>euse <ins>c</ins>over | <ins>O</ins>utside cover reuse |

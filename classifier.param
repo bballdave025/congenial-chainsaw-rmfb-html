@@ -146,6 +146,21 @@
   </InfoForIO>
   
   
+  <!-- Classification convention, clarified 2026-11-08, current RMMFB MVP:
+       Classify visible reuse by its binding context and exposure. Regions
+       of the same original writing surface can receive different subtype
+       tags; more than one binding-reuse class uses mbr under the existing
+       rules. A turned-over cover corner exposing earlier information on
+       its underside counts as ucr without requiring a tear. Earlier
+       information visible through the exterior cover counts as orc; the
+       analogous front/back-matter case counts as fmr within that scope.
+       Use spr for the spine-protection context defined in the guide.
+       Several classes do not imply several independent source fragments.
+       See CLASSIFICATION_CONTEXT_ADDENDUM.md for the dated study convention.
+       Later ontology revisions must be recorded separately; no automatic
+       rewriting of historical filenames or classifications is implied.
+  -->
+
   <ClassificationGroup id="g0">
   
   <!-- Phrase to remember: "image specifically meant to show the [specific] surface" -->
