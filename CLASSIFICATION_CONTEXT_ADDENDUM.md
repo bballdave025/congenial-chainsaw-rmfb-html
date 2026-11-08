@@ -4,9 +4,11 @@ Clarified by David BLACK on 2026-11-08.
 
 ## Scope
 
-This addendum states the annotation conventions governing the current
-RMMFB ruthlessly MVP experiments and publication. It explains the
-procedure to apply to visible reuse. It does not establish a permanent
+This addendum explains the already established annotation conventions
+governing the current RMMFB ruthlessly MVP experiments and publication.
+November 8 is the date of this explanation, not the date the procedure
+was adopted or locked. No annotation rule is being changed here.
+It does not establish a permanent
 taxonomy: later ontology versions may revise the conventions with expert
 input and a recorded rationale.
 
@@ -30,6 +32,10 @@ independent source leaves or fragments.
 
 When an image shows more than one binding-reuse class, use `mbr` with
 the applicable subtype tags under the existing multiple-class convention.
+Preserve the guide's specific UCR/SPR uncertainty exception: assigning
+both as alternatives for one uncertain piece does not alone warrant `mbr`.
+That exception is distinct from observing several applicable contexts
+in different regions of the same original writing surface.
 The same host codex and known related views must remain grouped for
 train/development/test assignment despite different subtype labels.
 
@@ -72,9 +78,14 @@ The README and Markdown helpers link here, and `classifier.param` carries
 a comment summarizing the convention. The legacy HTML presentation is
 retained as historical material and is not being expanded with this addendum.
 The Word/PDF files have not yet been regenerated with this addition.
+The one-page source-ID guide and the one-to-two-page guide contain
+different historical content as well as different layouts. Preserve their
+source captions and review the differences before editing either version;
+do not replace one with the other. See [version and guide provenance](ONTOLOGY_PROVENANCE.md).
 
 ## Related ontology rules
 
 See [the README's multiple-class definitions](README.md#meaning-and-combinations-of-mcl-mbr-and-mmx)
 for `mcl`, `mbr`, and `mmx`. This addendum introduces no new class IDs,
 keyboard shortcuts, directory names, or filename tokens.
+

@@ -1,5 +1,5 @@
 # congenial-chainsaw-rmfb-html
-~~HTML~~ Microsoft Word saved as PDF that exposes the XML used in the classifier, allowing the descriptions and examples to be more-easily seen. It will be a good guide for me to remember which things I want classified in which way (and thus to be consistent). It will also track the classification changes and addenda that always come with such classification projects
+Classification ontology and illustrated annotation guides for RMMFB, maintained as Microsoft Word documents with PDF exports, an XML classifier configuration, and concise Markdown references.
 
 ## Current guide format and annotation convention
 
@@ -32,6 +32,20 @@ maintained Word guide and carried into the next PDF export, preserving
 the existing page structure. The current Word/PDF files have not yet
 been regenerated with it. Later ontology versions may revise the rule
 with a recorded rationale; retain the convention used for each experiment.
+
+### Version provenance
+
+The November 8 addendum explains an existing procedure; it does not change
+the annotation rules or reset their earlier procedural lock. The reviewed
+repository baseline is commit
+[`c8402b403055774d9eb7732952ad13c80d92b83f`](https://github.com/bballdave025/congenial-chainsaw-rmfb-html/tree/c8402b403055774d9eb7732952ad13c80d92b83f).
+This is an explicit documentation snapshot recorded on November 8, 2026,
+not a claim that this was the original freeze commit. The exact earlier
+lock date/commit was not recovered in the cross-repository review.
+
+See [ontology and guide provenance](ONTOLOGY_PROVENANCE.md) for the dated
+evidence, the distinction between the two illustrated guides, and the
+remaining Word/PDF synchronization work.
 
 ## Reused Manuscript Fragments in Bindings - for the short and not-quite-complete version.
 
@@ -217,3 +231,4 @@ of every image's visual classification.
 Other classification ideas, as well as more details about and several image examples for the main reuse document classifications are in the repo files
 
 ---
+
