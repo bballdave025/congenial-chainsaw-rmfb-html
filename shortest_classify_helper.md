@@ -4,6 +4,32 @@ For the current study convention on binding context, shared writing surfaces,
 and folded-back or show-through cases, see the
 [2026-11-08 classification addendum](CLASSIFICATION_CONTEXT_ADDENDUM.md).
 
+**Current keys and scope.** Active keyboard shortcuts follow `classifier.param`
+(David BLACK's direction, 2026-11-08); `gni` uses **J**. Rows marked `%`
+record the older c11–c14 distinctions, now combined into c15, rather than
+four additional active choices. `obr` and `suh` remain deprecated for this
+study. Existing historical filenames are preserved.
+The wrapper category remains defined in the annotation configuration, but
+David has excluded wrapper images and its prediction output from the current
+MVP experiment; see the review for the inventory check.
+
+`abg` also marks across-book-gutter OIC; its directory name alone is not a
+positive binding-reuse label. G does not itself count as another reuse subtype
+for `mbr`. Apply the illustrated guide's specific multiple-class exceptions.
+See [the consistency review](GUIDE_CONSISTENCY_REVIEW_2026-11-08.md) for
+unresolved wrapper captions and the Word/PDF corrections.
+
+The UI's `Unsure` option is distinct from the original 3331 annotation
+protocol, which required a classification. `fko` supplied some qualitative
+uncertainty information; it is not a calibrated probability.
+
+**Historical extension rows.** The struck-through future-phenomena rows below
+preserve an older proposal; their class IDs are not synchronized with the
+newer c50–c62 list in the fuller illustrated guide. In particular, the old
+c60 `nbr` proposal must not be used to interpret c121 `nbr` filenames; the
+newer non-binding-reuse phenomenon is c59 `nfb`. These rows are not active
+classifier settings. See the review's explicit crosswalk before reusing them.
+
 | c? | Classification Directory Name | Keyboard Key to Use | File-ending Three Letters | Any Mnemonic Explanation | Shows Up As |
 |------|---|---|---|---|---|
 | c1   | Outside_Cover_Reuse | <kbd>O</kbd> | <code>orc</code> | Don't want to confuse optical character recognition, so <ins>o</ins>utside <ins>r</ins>euse <ins>c</ins>over | <ins>O</ins>utside cover reuse |
@@ -13,13 +39,14 @@ and folded-back or show-through cases, see the
 | <strike>c5</strike>   | <strike>One_Behind_Reuse</strike> | <strike>_<kbd>H</kbd>_</strike> | <strike><code>obr</code></strike> | <strike>Initialism</strike> | TRYING WITHOUT THIS FOR FHTW 2025 <strike>one be<ins>H</ins>ind reuse</strike> |
 | c6   | Cover_Wraparound_Reuse | <kbd>W</kbd> | <code>cwa</code> | <ins>c</ins>over <ins>w</ins>rap<ins>a</ins>round | cover <ins>W</ins>raparound reuse |
 | c7   | Tiny_Background_Reuse | <kbd>T</kbd> | <code>tbr</code> | Initialism |  |
-| c8   | Small_Connecting_or_Guard_Reuse | <kbd>C</kbd> | <code>scg</code> | <ins>s</ins>mall <ins>c</ins>onnecting or <ins>g</ins>uard  | small <ins>C</ins>onnecting or guard reuse |
-| c9   | Across_Book_Gutter_Reuse | <kbd>G</kbd> | <code>abg</code> | <ins>a</ins>cross <ins>b<ins>ook <ins>g</ins>utter | across book <ins>G</ins>utter reuse |
+| c8   | Connecting_or_Guard_Reuse | <kbd>C</kbd> | <code>scg</code> | <ins>s</ins>mall <ins>c</ins>onnecting or <ins>g</ins>uard  | <ins>C</ins>onnecting or guard reuse |
+| c9   | Across_Book_Gutter_Reuse | <kbd>G</kbd> | <code>abg</code> | <ins>a</ins>cross <ins>b</ins>ook <ins>g</ins>utter | across book <ins>G</ins>utter reuse |
 | c10  | Wrapper_Reuse | <kbd>4</kbd> | <code>wpr</code> | <ins>w</ins>ra<ins>p</ins>per | wrapper reuse (<ins>4</ins>) |
-| c11  | Not_In_Situ_Reuse_Cover | <kbd>V</kbd> | <code>nsc</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>c</ins>over |  |
-| c12  | Not_In_Situ_Reuse_Front-back | <kbd>A</kbd> | <code>nsf</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>f</ins>ront-back |  |
-| c13  | Not_In_Situ_Reuse_Spine_Protection | <kbd>9</kbd> | <code>nsp</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>(s)p</ins>ine |  |
-| c14  | Not_In_Situ_Reuse_Small_Connecting_Guard | <kbd>7</kbd> | <code>nst</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>s</ins>mall connecting like <ins>(s)t</ins>rap; 7 in like a backwards gamma -> G sound -> <ins>Guard</ins> |  |
+| <code>%</code>c11<code>%</code> | Not_In_Situ_Reuse_Cover | <kbd>V</kbd> | <code>nsc</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>c</ins>over |  |
+| <code>%</code>c12<code>%</code> | Not_In_Situ_Reuse_Front-back | <kbd>A</kbd> | <code>nsf</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>f</ins>ront-back |  |
+| <code>%</code>c13<code>%</code> | Not_In_Situ_Reuse_Spine_Protection | <kbd>9</kbd> | <code>nsp</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>(s)p</ins>ine |  |
+| <code>%</code>c14<code>%</code> | Not_In_Situ_Reuse_Small_Connecting_Guard | <kbd>7</kbd> | <code>nst</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>s</ins>mall connecting like <ins>(s)t</ins>rap; 7 in like a backwards gamma -> G sound -> <ins>Guard</ins> |  |
+| c15  | General_Not_In_Situ_Reuse | <kbd>J</kbd> | <code>gni</code> | <ins>g</ins>eneral <ins>n</ins>ot <ins>i</ins>n situ reuse | general not in situ reuse (<ins>J</ins>) |
 | ...  | ... | ... | ... | Perhaps more, one day | ... |
 | <strike><em>c21</em></strike>  | <strike><em>Outside_Cover_Without_Reuse</em></strike> | <strike><em>_<kbd>6</kbd>_</em></strike> | <strike><em><code>woc</code></em></strike> | <strike><em>Newer classification, maybe add later</em></strike> | NOT FOR FHTW 2025 |
 | <strike><em>c22</em></strike>  | <strike><em>Front-back_Matter_Without_Reuse</em></strike> | <strike><em>_<kbd>5</kbd>_</em></strike> | <strike><em><code>wfb</code></em></strike> | <strike><em>Newer classification, maybe add later</em></strike> | NOT FOR FHTW 2025 |
@@ -28,16 +55,16 @@ and folded-back or show-through cases, see the
 | <strike><em>c25</em></strike>  | <strike><em>Not_In_Situ_Spine_Protection_Without_Reuse</em></strike> | <strike><em>_<kbd>Q</kbd>_</em></strike> | <strike><em><code>wnp</code></em></strike> | <strike><em>Newer classification, maybe add later</em></strike> | NOT FOR FHTW 2025 |
 | <strike><em>c26</em></strike>  | <strike><em>Not_In_Situ_Small_Connecting_Guard_Without_Reuse</em></strike> | <strike><em>_<kbd>,</kbd>_</em></strike> | <strike><em><code>wnc</code></em></strike> | <strike><em>Newer classification, maybe add later</em></strike> | NOT FOR FHTW 2025 |
 | ...  | ... | ... | ... | Maybe more, someday | ... |
-| <strike>c51</strike>  | <strike>Stitching_Any_Type</strike> | <strike>_<kbd>S</kbd>_</strike> | <strike><code>stc</code> | <strike><ins>st</ins>it<ins>c</ins>hing</strike> | NOT FOR FHTW 2025 <strike><ins>S</ins>titching any type</strike> |
-| <strike>c52</strike>  | <strike>Stitching_Level_1</strike> | <strike>_<kbd>1</kbd>_</strike> | <strike><code>st1</code> | <strike><ins>st</ins>itching level <ins>1</ins></strike> | NOT FOR FHTW 2025 <strike>stitching level <ins>1</ins></strike> |
-| <strike>c53</strike>  | <strike>Stitching_Level_2</strike> | <strike>_<kbd>2</kbd>_</strike> | <strike><code>st2</code> | <strike><ins>st</ins>itching level <ins>2</ins></strike> | NOT FOR FHTW 2025 <strike>stitching level <ins>2</ins></strike> |
-| <strike>c54</strike>  | <strike>Stitching_Level_3</strike> | <strike>_<kbd>3</kbd>_</strike> | <strike><code>st3</code> | <strike><ins>st</ins>itching level <ins>3</ins></strike> | NOT FOR FHTW 2025 <strike>stitching level <ins>3</ins></strike> |
+| <strike>c51</strike>  | <strike>Stitching_Any_Type</strike> | <strike>_<kbd>S</kbd>_</strike> | <strike><code>stc</code></strike> | <strike><ins>st</ins>it<ins>c</ins>hing</strike> | NOT FOR FHTW 2025 <strike><ins>S</ins>titching any type</strike> |
+| <strike>c52</strike>  | <strike>Stitching_Level_1</strike> | <strike>_<kbd>1</kbd>_</strike> | <strike><code>st1</code></strike> | <strike><ins>st</ins>itching level <ins>1</ins></strike> | NOT FOR FHTW 2025 <strike>stitching level <ins>1</ins></strike> |
+| <strike>c53</strike>  | <strike>Stitching_Level_2</strike> | <strike>_<kbd>2</kbd>_</strike> | <strike><code>st2</code></strike> | <strike><ins>st</ins>itching level <ins>2</ins></strike> | NOT FOR FHTW 2025 <strike>stitching level <ins>2</ins></strike> |
+| <strike>c54</strike>  | <strike>Stitching_Level_3</strike> | <strike>_<kbd>3</kbd>_</strike> | <strike><code>st3</code></strike> | <strike><ins>st</ins>itching level <ins>3</ins></strike> | NOT FOR FHTW 2025 <strike>stitching level <ins>3</ins></strike> |
 | <strike>c55</strike>  | <strike>Manicule</strike> | <strike>_<kbd>M</kbd>_</strike> | <strike><code>man</code></strike> | <strike><ins>man</ins>icule</strike> | NOT FOR FHTW 2025 <strike><ins>M</ins>anicule</strike> |
-| <strike>c56</strike>  | <strike>Non_Manicule_Nota_Bene_Sign</strike> | <strike>_<kbd>J</kbd>_</strike> | <strike><code>nmn</code> | <ins>n</ins>on <ins>m</ins>anicule n.b. sign; also, the 'J' is kind of a different letter and we're looking for a different <em>Nota Bene</em></strike> | NOT FOR FHTW 2025 <strike>non manicule nota bene sign (<ins>J</ins>)</strike> |
+| <strike>c56</strike>  | <strike>Non_Manicule_Nota_Bene_Sign</strike> | <strike>_<kbd>J</kbd>_</strike> | <strike><code>nmn</code></strike> | <ins>n</ins>on <ins>m</ins>anicule n.b. sign; also, the 'J' is kind of a different letter and we're looking for a different <em>Nota Bene</em> | NOT FOR FHTW 2025 <strike>non manicule nota bene sign (<ins>J</ins>)</strike> |
 | <strike>c57</strike>  | <strike>Fingerprint</strike> | <strike>_<kbd>.</kbd>_</strike> | <strike><code>fgp</code></strike> | <strike><ins>f</ins>in<ins>g</ins>er<ins>p</ins>rint; also, the dot is kind of like a far-away fingerprint, where you can't see the swooshes and stuff</strike> | NOT FOR FHTW 2025 <strike>fingerprint (<ins>.</ins>)</strike> |
 | <strike>c58</strike>  | <strike>Hair_on_Parchment</strike> | <strike>_<kbd>\]</kbd>_</strike> | <strike><code>hop</code></strike> |<strike> Initialism; the square bracket is like the hair of a man lying with his head to the right</strike> | NOT FOR FHTW 2025 <strike>hair on parchment ( <ins>\]</ins> )</strike> |
 | <strike>c59</strike>  | <strike>Very_Visible_Watermark</strike> | <strike>_<kbd>;</kbd>_</strike> | <strike><code>vvw</code></strike> | <strike>Initialism; idk, maybe they are two drops of water, and they are both marks - especially the comma</strike> | NOT FOR FHTW 2025 <strike>very visible watermark (<ins>;</ins>)</strike> |
-| <strike>c60</strike>  | <strike>Non_Binding_Reuse</strike> | <strike>_<kbd>\`</kbd>_</strike> | <strike><code>nbr</code></strike></strike> | <strike>Initialis</strike> | NOT FOR FHTW 2025 <strike>non binding reuse (<ins>Y</ins>es)</strike> |
+| <strike>c60</strike>  | <strike>Non_Binding_Reuse</strike> | <strike>_<kbd>\`</kbd>_</strike> | <strike><code>nbr</code></strike> | <strike>Initialis</strike> | NOT FOR FHTW 2025 <strike>non binding reuse (<ins>Y</ins>es)</strike> |
 | ...  | ... | ... | ... | Almost certainly more, and probably soon! | ... |
 | <strike><em>c71</em></strike>  | <strike><em>Iron_Gall_Corrosion_Level_1</em></strike> | <strike><em>_<kbd>Shift</kbd> + <kbd>1</kbd></em>_</strike> | <strike><em><code>ig1</code></em></strike> | <strike><em><ins>i</ins>ron <ins>g</ins>all <ins>1</ins></em></strike> | NOT FOR FHTW 2025 <strike><em>corrosion level <ins>1</ins></em></strike> |
 | <strike><em>c72</em></strike>  | <strike><em>Iron_Gall_Corrosion_Level_2</em></strike> | <strike><em>_<kbd>Shift</kbd> + <kbd>2</kbd>_</em></strike> | <strike><em><code>ig2</code></em></strike> | <strike><em><ins>i</ins>ron <ins>g</ins>all <ins>2</ins></em></strike> | NOT FOR FHTW 2025 <strike><em>corrosion level <ins>2</ins></em></strike> |
@@ -46,16 +73,27 @@ and folded-back or show-through cases, see the
 | ...  | ... | ... | ... | Very likely more, hopefully after talking with some experts! | ... |
 | c101 | Multiple_Classes | <kbd>=</kbd> | <code>mcl</code> | <ins>m</ins>ultiple <ins>cl</ins>asses | multiple classes (<ins>=</ins>) |
 | c102 | Multiple_Binding_Reuse_Classes | <kbd>B</kbd> | <code>mbr</code> | <ins>m</ins>ultiple <ins>b</ins>inding <ins>r</ins>euse | multiple <ins>B</ins>inding reuse classes |
-| c103 | Multiple_Mixed_Incl_Not_Binding | <kbd>X</kbd> | <code>mmx</code> | <ins>m</ins>ultiple <ins>m</ins>i<ins>x</ins>ed (the <ins>x</ins> can help you think of not binding; the word, binding, x-ed out) | multiple mi<ins>x</ins>ed incl not binding |
+| c103 | Multiple_Mixed_But_All_Not_Binding | <kbd>X</kbd> | <code>mmx</code> | <ins>m</ins>ultiple <ins>m</ins>i<ins>x</ins>ed (the <ins>x</ins> can help you think of not binding; the word, binding, x-ed out) | multiple mi<ins>X</ins>ed but all not binding |
 | ...  | ... | ... | ... | Maybe multiple more, but idk. | ... |
+| c111 | Fake_Out | <kbd>K</kbd> | <code>fko</code> | <ins>f</ins>a<ins>k</ins>e-<ins>o</ins>ut | fa<ins>K</ins>e-out |
+| c112 | Important_as_Counter_Example | <kbd>Z</kbd> | <code>iac</code> | Important as counter-example or contrast | important as counter-example |
 | c121 | No_For_Binding_Reuse | <kbd>0</kbd> | <code>nbr</code> | <ins>n</ins>o for <ins>b</ins>inding <ins>r</ins>euse | n<ins>0</ins> for binding reuse (<ins>0</ins>) |
-| c122 | No_Binding_Reuse_but_Other_Interesting_Classes | <kbd>-</kbd> | <code>oic</code> | <ins>o</ins>ther <ins>i</ins>nteresting <ins>c</ins>lasses | other interesting classes (<ins>-</ins>) |
+| c122 | No_Binding_Reuse_But_Other_Interesting_Classes | <kbd>-</kbd> | <code>oic</code> | <ins>o</ins>ther <ins>i</ins>nteresting <ins>c</ins>lasses | other interesting classes (<ins>-</ins>) |
 | c123 | Nothing_Interesting | <kbd>N</kbd> | <code>noi</code> | <ins>n</ins>othing <ins>o</ins>f <ins>i</ins>nterest | <ins>N</ins>othi<ins>N</ins>g i<ins>N</ins>teresti<ins>N</ins>g |
 | c124 | Do_Not_Use | <kbd>D</kbd> | <code>dnu</code> | Initialism | <ins>D</ins>o not use |
 | c125 | Unsure | <kbd>U</kbd> |  | no addition is given, so that when someone else checks the image, they can classify it however is needed | <ins>U</ins>ns<ins>U</ins>re |
 | ...  | ... | ... | ... | Likely not many (or none) after this. | ... |
 
-Notes: Contains all classes that I'm seriously considering using before the Fragmentology paper submission. I might not use the cover, front matter, etc. without reuse classes, though.
+Notes: This extended reference includes the binding-reuse scheme and earlier
+proposals for future manuscript-study phenomena. Their presence here is not
+a commitment to implement them before the MVP paper.
+
+Other interesting phenomena were deliberately noted during the original
+annotation, using `oic`, `mcl`, or `mmx` as applicable. These provide a useful
+candidate pool for later work; completeness for each phenomenon has not been
+independently measured. A missing marker is not a verified negative label.
+The current stitching review adds a separate annotation layer without
+rewriting the frozen reuse inventory.
 
 **Multiple-class tags (clarified 2026-11-05):** `mcl` means at least one
 binding-reuse class plus at least one other interesting class; `mbr` means
@@ -64,3 +102,4 @@ class with no binding-reuse class. `mcl` and `mbr` may coexist in either order.
 `mmx` does not combine with either. "OIC" as a kind of phenomenon does not
 require a literal `oic` token on a reuse-positive image.
 See [meanings, combinations, and the filename check](README.md#meaning-and-combinations-of-mcl-mbr-and-mmx).
+

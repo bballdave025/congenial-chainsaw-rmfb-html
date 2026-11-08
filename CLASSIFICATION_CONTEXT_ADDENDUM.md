@@ -30,12 +30,18 @@ and spine protection. Apply each relevant class to the context actually
 visible. The number of applicable reuse classes is not a count of
 independent source leaves or fragments.
 
-When an image shows more than one binding-reuse class, use `mbr` with
-the applicable subtype tags under the existing multiple-class convention.
-Preserve the guide's specific UCR/SPR uncertainty exception: assigning
-both as alternatives for one uncertain piece does not alone warrant `mbr`.
-That exception is distinct from observing several applicable contexts
-in different regions of the same original writing surface.
+Apply `mbr` under the guide's existing multiple-class convention and its
+specific exceptions, rather than by counting all tags. Assigning UCR and
+SPR as alternatives for one uncertain piece does not alone warrant `mbr`.
+The across-book-gutter marker (`abg`, keyboard G) does not itself count as
+another reuse subtype: G+F does not warrant B, while G+F+R does.
+The wrapper examples also contain a same-piece exception and an apparently
+conflicting caption; their reconciliation remains an author review item in
+[the guide consistency review](GUIDE_CONSISTENCY_REVIEW_2026-11-08.md).
+This explanation does not resolve that ambiguity by introducing a new rule.
+David has instead excluded wrappers from the current experimental scope and
+prediction targets; c10 remains in the frozen ontology. The review records
+the example identifiers and the inventory check separately from this rule.
 The same host codex and known related views must remain grouped for
 train/development/test assignment despite different subtype labels.
 
@@ -66,13 +72,18 @@ particular model-performance effect.
 
 ## Placement in the guides
 
-Append this dated addendum after the existing content of each maintained
-Word guide, then regenerate its corresponding PDF. This preserves the
-class-by-class pages and the compact reference tables.
+Append the explanation as **Appendix A** inside
+`Simple_Classifications_-_1-or-2-pg_each.docx`, then regenerate its PDF.
+The [review](GUIDE_CONSISTENCY_REVIEW_2026-11-08.md) provides paste-ready text
+and an annotated-image placeholder. Preserve the existing class pages.
 
-- `Simple_Classifications_-_1-or-2-pg_each.docx`
-- `Simple_Classifications_-_1pg_each_-_resizes_to_show_MS_IDs.docx`
-- `Smallest_Classification_Instructions_FHTW2025_read-print-able.docx`
+Per David BLACK's November 8 direction, the older source-ID guide keeps
+its historical substance. Rename it to identify its source-reference role
+and add an every-page warning directing readers to the fuller guide.
+The smallest printable guide needs consistency corrections, not this appendix.
+The two Markdown helpers need names distinguishing MVP reuse from reuse
+plus future phenomena. Proposed names are in the review; no files have
+yet been renamed.
 
 The README and Markdown helpers link here, and `classifier.param` carries
 a comment summarizing the convention. The legacy HTML presentation is

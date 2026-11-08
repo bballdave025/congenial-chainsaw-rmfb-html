@@ -151,8 +151,11 @@
        does not date the original lock. See ONTOLOGY_PROVENANCE.md.
        Classify visible reuse by its binding context and exposure. Regions
        of the same original writing surface can receive different subtype
-       tags; more than one binding-reuse class uses mbr under the existing
-       rules, including the UCR/SPR uncertainty exception for one piece.
+       tags. Apply mbr under the existing guide-specific exceptions, not by
+       counting all tags: UCR/SPR alternatives for one uncertain piece do
+       not alone warrant mbr, and abg is not an additional reuse subtype.
+       Wrapper captions still need author reconciliation; see the guide
+       consistency review. This comment does not resolve that ambiguity.
        A turned-over cover corner exposing earlier information on
        its underside counts as ucr without requiring a tear. Earlier
        information visible through the exterior cover counts as orc; the

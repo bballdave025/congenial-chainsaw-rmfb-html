@@ -4,6 +4,25 @@ For the current study convention on binding context, shared writing surfaces,
 and folded-back or show-through cases, see the
 [2026-11-08 classification addendum](CLASSIFICATION_CONTEXT_ADDENDUM.md).
 
+**Current keys and scope.** Active keyboard shortcuts follow `classifier.param`
+(David BLACK's direction, 2026-11-08); `gni` uses **J**. Rows marked `%`
+record the older c11–c14 distinctions, now combined into c15, rather than
+four additional active choices. `obr` and `suh` remain deprecated for this
+study. Existing historical filenames are preserved.
+The wrapper category remains defined in the annotation configuration, but
+David has excluded wrapper images and its prediction output from the current
+MVP experiment; see the review for the inventory check.
+
+`abg` also marks across-book-gutter OIC; its directory name alone is not a
+positive binding-reuse label. G does not itself count as another reuse subtype
+for `mbr`. Apply the illustrated guide's specific multiple-class exceptions.
+See [the consistency review](GUIDE_CONSISTENCY_REVIEW_2026-11-08.md) for
+unresolved wrapper captions and the Word/PDF corrections.
+
+The UI's `Unsure` option is distinct from the original 3331 annotation
+protocol, which required a classification. `fko` supplied some qualitative
+uncertainty information; it is not a calibrated probability.
+
 | c? | Classification Directory Name | Keyboard Key to Use | File-ending Three Letters | Any Mnemonic Explanation | Shows Up As |
 |------|---|---|---|---|---|
 | c1   | Outside_Cover_Reuse | <kbd>O</kbd> | <code>orc</code> | Don't want to confuse optical character recognition, so <ins>o</ins>utside <ins>r</ins>euse <ins>c</ins>over | <ins>O</ins>utside cover reuse |
@@ -13,26 +32,31 @@ and folded-back or show-through cases, see the
 | <strike>c5</strike>   | <strike>One_Behind_Reuse</strike> | <strike>_<kbd>H</kbd>_</strike> | <strike><code>obr</code></strike> | <strike>Initialism</strike> | TRYING WITHOUT THIS FOR FHTW 2025 <strike>one be<ins>H</ins>ind reuse</strike> |
 | c6   | Cover_Wraparound_Reuse | <kbd>W</kbd> | <code>cwa</code> | <ins>c</ins>over <ins>w</ins>rap<ins>a</ins>round | cover <ins>W</ins>raparound reuse |
 | c7   | Tiny_Background_Reuse | <kbd>T</kbd> | <code>tbr</code> | Initialism |  |
-| c8   | Small_Connecting_or_Guard_Reuse | <kbd>C</kbd> | <code>scg</code> | <ins>s</ins>mall <ins>c</ins>onnecting or <ins>g</ins>uard  | small <ins>C</ins>onnecting or guard reuse |
-| c9   | Across_Book_Gutter_Reuse | <kbd>G</kbd> | <code>abg</code> | <ins>a</ins>cross <ins>b<ins>ook <ins>g</ins>utter | across book <ins>G</ins>utter reuse |
+| c8   | Connecting_or_Guard_Reuse | <kbd>C</kbd> | <code>scg</code> | <ins>s</ins>mall <ins>c</ins>onnecting or <ins>g</ins>uard  | <ins>C</ins>onnecting or guard reuse |
+| c9   | Across_Book_Gutter_Reuse | <kbd>G</kbd> | <code>abg</code> | <ins>a</ins>cross <ins>b</ins>ook <ins>g</ins>utter | across book <ins>G</ins>utter reuse |
 | c10  | Wrapper_Reuse | <kbd>4</kbd> | <code>wpr</code> | <ins>w</ins>ra<ins>p</ins>per | wrapper reuse (<ins>4</ins>) |
 | <code>%</code>c11<code>%</code>  | Not_In_Situ_Reuse_Cover | <kbd>V</kbd> | <code>nsc</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>c</ins>over |              <code>%%%%  TO  %%%%</code> |
 | <code>%</code>c12<code>%</code>  | Not_In_Situ_Reuse_Front-back | <kbd>A</kbd> | <code>nsf</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>f</ins>ront-back |    <code>%%%%  BE  %%%%</code> |
 | <code>%</code>c13<code>%</code>  | Not_In_Situ_Reuse_Spine_Protection | <kbd>9</kbd> | <code>nsp</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>(s)p</ins>ine | <code>%%%  COMB-  %%</code> |
 | <code>%</code>c14<code>%</code>  | Not_In_Situ_Reuse_Small_Connecting_Guard | <kbd>7</kbd> | <code>nst</code> | <ins>n</ins>ot in <ins>s</ins>itu reuse <ins>s</ins>mall connecting like <ins>(s)t</ins>rap; 7 in like a backwards gamma -> G sound -> <ins>Guard</ins> | <code>%%%  INED  %%%</code> |
-| c15  | General_Not_In_Situ_Reuse | <kbd>Y</kbd> | <code>gni</code> | <ins>g</ins>eneral <ins>n</ins>ot <ins>i</ins>n situ reuse | general not in situ reuse (<ins>Y</ins>) |
+| c15  | General_Not_In_Situ_Reuse | <kbd>J</kbd> | <code>gni</code> | <ins>g</ins>eneral <ins>n</ins>ot <ins>i</ins>n situ reuse | general not in situ reuse (<ins>J</ins>) |
 | ...  | ... | ... | ... | Perhaps more, one day | ... |
 | c101 | Multiple_Classes | <kbd>=</kbd> | <code>mcl</code> | <ins>m</ins>ultiple <ins>cl</ins>asses | multiple classes (<ins>=</ins>) |
 | c102 | Multiple_Binding_Reuse_Classes | <kbd>B</kbd> | <code>mbr</code> | <ins>m</ins>ultiple <ins>b</ins>inding <ins>r</ins>euse | multiple <ins>B</ins>inding reuse classes |
 | c103 | Multiple_Mixed_But_All_Not_Binding | <kbd>X</kbd> | <code>mmx</code> | <ins>m</ins>ultiple <ins>m</ins>i<ins>x</ins>ed (the <ins>x</ins> can help you think of not binding; the word, binding, x-ed out) | multiple mi<ins>X</ins>ed but all not binding |
 | ...  | ... | ... | ... | Maybe multiple more, but idk. | ... |
 | c111 | Fake_Out | <kbd>K</kbd> | <code>fko</code> | <ins>f</ins>a<ins>k</ins>e-<ins>o</ins>ut | fa<ins>K</ins>e-out |
+| c112 | Important_as_Counter_Example | <kbd>Z</kbd> | <code>iac</code> | Important as counter-example or contrast | important as counter-example |
 | ...  | ... | ... | ... | ... | ... |
 | c121 | No_For_Binding_Reuse | <kbd>0</kbd> | <code>nbr</code> | <ins>n</ins>o for <ins>b</ins>inding <ins>r</ins>euse | n<ins>0</ins> for binding reuse (<ins>0</ins>) |
-| c122 | No_Binding_Reuse_but_Other_Interesting_Classes | <kbd>-</kbd> | <code>oic</code> | <ins>o</ins>ther <ins>i</ins>nteresting <ins>c</ins>lasses | other interesting classes (<ins>-</ins>) |
+| c122 | No_Binding_Reuse_But_Other_Interesting_Classes | <kbd>-</kbd> | <code>oic</code> | <ins>o</ins>ther <ins>i</ins>nteresting <ins>c</ins>lasses | other interesting classes (<ins>-</ins>) |
 | c123 | Nothing_Interesting | <kbd>N</kbd> | <code>noi</code> | <ins>n</ins>othing <ins>o</ins>f <ins>i</ins>nterest | <ins>N</ins>othi<ins>N</ins>g i<ins>N</ins>teresti<ins>N</ins>g |
 | c124 | Do_Not_Use | <kbd>D</kbd> | <code>dnu</code> | Initialism | <ins>D</ins>o not use |
 | c125 | Unsure | <kbd>U</kbd> |  | no addition is given, so that when someone else checks the image, they can classify it however is needed | <ins>U</ins>ns<ins>U</ins>re |
 | ...  | ... | ... | ... | Likely not many (or none) after this. | ... |
 
-Notes: Contains only the classes used for the fragments-in-bindings study for the Family History Technology Workshop in 2025. At the moment, I'm leaving the <code>'one be<ins>H</ins>ind reuse'</code> class out of the FHTW 2025 parameter file, though that might change.
+Notes: This reference covers the current MVP binding-reuse scheme and its
+associated control, uncertainty, and other-phenomenon markers. Those markers
+are not all prediction targets. It derives from the FHTW 2025 helper; the
+current project is RMMFB/Fragmentology. Broader proposed phenomena are recorded
+in `shortest_classify_helper.md` pending the coordinated renames.

@@ -27,10 +27,12 @@ conventions; any expected improvement in learning or generalization is
 a separate research hypothesis.
 
 The [dated classification addendum](CLASSIFICATION_CONTEXT_ADDENDUM.md)
-sets out the rule and examples. It is intended to be appended to each
-maintained Word guide and carried into the next PDF export, preserving
-the existing page structure. The current Word/PDF files have not yet
-been regenerated with it. Later ontology versions may revise the rule
+sets out the rule and examples, including the existing multiple-class
+exceptions. It is intended as an appendix in the fuller illustrated guide,
+`Simple_Classifications_-_1-or-2-pg_each.docx`, followed by PDF export.
+The source-ID guide will retain its historical substance with an outdated-
+instructions footer; the smallest printable guide needs consistency edits.
+The current Word/PDF files have not yet been regenerated. Later ontology versions may revise the rule
 with a recorded rationale; retain the convention used for each experiment.
 
 ### Version provenance
@@ -46,6 +48,21 @@ lock date/commit was not recovered in the cross-repository review.
 See [ontology and guide provenance](ONTOLOGY_PROVENANCE.md) for the dated
 evidence, the distinction between the two illustrated guides, and the
 remaining Word/PDF synchronization work.
+
+See the [November 8 guide consistency review](GUIDE_CONSISTENCY_REVIEW_2026-11-08.md)
+for the complete findings, proposed filenames, appendix text, and author
+edit checklist. `classifier.param` is authoritative for current keyboard
+shortcuts; in particular, `gni` uses **J**, not the older **Y** shown in the
+PDFs. Historical source captions and superseded instructions remain evidence
+of earlier guide versions, not an instruction to relabel the frozen dataset.
+
+**Current experiment scope (2026-11-08):** David has chosen to exclude wrapper
+examples and the wrapper prediction output for the MVP. The ontology's c10
+definition remains historical/current annotation documentation; experiment
+selection and target configuration are separate. The reviewed 3,331-entry
+inventory has no `wpr` tokens or `Wrapper_Reuse` paths. This filename check
+does not guarantee that no unrecognized wrapper is present in the images.
+See the review for the guide examples and the exclusion-record procedure.
 
 ## Reused Manuscript Fragments in Bindings - for the short and not-quite-complete version.
 
@@ -148,7 +165,7 @@ Blank space for notes
 | %c12 | Not_In_Situ_Reuse_Front-back | A | nsf | not in situ reuse front-back | %%%% BE %%%% |
 | %c13 | Not_In_Situ_Reuse_Spine_Protection | 9 | nsp | not in situ reuse (s)pine | %%% COMB- %% |
 | %c14 | Not_In_Situ_Reuse_Small_Connecting_Guard | 7 | nst | not in situ reuse connecting like (s)trap; 7 like a backwards gamma -> G sound -> Guard | %%% INED %%%% |
-| c15 | General_Not_In_Situ_Reuse | Y | gni | general not in situ reuse; Y as in whY are these so difficult? |  |
+| c15 | General_Not_In_Situ_Reuse | J | gni | general not in situ reuse; key follows classifier.param |  |
 | ... | ... | ... | ... | Perhaps more, one day ... | ... |
 | c101 | Multiple_Classes | = | mcl | multiple classes | multiple classes (=) |
 | c102 | Multiple_Binding_Reuse_Classes | B | mbr | multiple binding reuse | multiple Binding reuse classes |
@@ -160,7 +177,7 @@ Blank space for notes
 | <sup>†</sup>~~c113~~ | <sup>†</sup>~~Somewhat_Uneasy_with_Classification_or_Hard  \n~~ ~~<sup>†</sup>[Initially considered Uneasy_with_Positive but decided wider class (possibly including negatives) with those I find or that I think the algorithm will find hard]~~\n<sup>†</sup>See description after the table, specifically _§More Notes, Edit (2026-10-03)_ | <sup>†</sup>~~H~~ | <sup>†</sup>~~suh~~ | <sup>†</sup>~~somewhat uneasy hard~~ | <sup>†</sup> |
 | ... | ... | ... | ... | ... | ... |
 | c121 | No_For_Binding_Reuse | 0 | nbr | no for-binding reuse | n0 for binding reuse (0) |
-| c122 | No_Binding_Reuse_but_Other_Interesting_Classes | - | oic | other interesting classes | other interesting classes (-) |
+| c122 | No_Binding_Reuse_But_Other_Interesting_Classes | - | oic | other interesting classes | other interesting classes (-) |
 | c123 | Nothing_Interesting | N | noi | nothing of interest | NothiNg iNterestiNg |
 | c124 | Do_Not_Use | D | dnu | Initialism | Do not use |
 | c125 | Unsure | U |  | no addition is given, so that when someone else checks the image, they can classify it however is needed | UnsUre |
