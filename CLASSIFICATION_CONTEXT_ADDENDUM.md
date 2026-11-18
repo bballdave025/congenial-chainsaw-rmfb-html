@@ -2,12 +2,19 @@
 
 Clarified by David BLACK on 2026-11-08.
 
+November 17 follow-up: descriptions are now consolidated in
+[`classifier.param`](classifier.param). The dated clarifications below record
+the exterior show-through and shared UCR/FMR-region decisions; they do not
+claim that the historical text already specified regional pixel overlap.
+See the [source mapping](docs/ONTOLOGY_DESCRIPTION_CONSOLIDATION_2026-11-17.md).
+
 ## Scope
 
 This addendum explains the already established annotation conventions
 governing the current RMMFB ruthlessly MVP experiments and publication.
 November 8 is the date of this explanation, not the date the procedure
-was adopted or locked. No annotation rule is being changed here.
+was adopted or locked. That November 8 explanation did not change an annotation rule.
+The November 17 additions are explicitly dated clarifications.
 It does not establish a permanent
 taxonomy: later ontology versions may revise the conventions with expert
 input and a recorded rationale.
@@ -50,8 +57,10 @@ train/development/test assignment despite different subtype labels.
 | Visible reuse context | Classification procedure |
 |---|---|
 | A folded-back or turned-over corner of the cover exposes information on its underside | Use `ucr` for that exposed under-cover reuse. A tear or hole is not required. |
-| Information from an earlier use is visible on or through the exterior cover surface | Use `orc`. Visibility through the surface, including bleed-through or corrosion where applicable, does not exclude ORC. |
+| Information from an earlier use is visible on or through the exterior cover surface | Use `orc`, including when the opposite side is functionally FMR. That function does not replace ORC in the exterior view. |
 | Information from an earlier use is visible on or through front/back matter within the guide's FMR scope | Use `fmr`; direct surface visibility is not required. |
+| The inside of a limp cover occupies the structural position of a paste-down | It can qualify as `fmr`, as explicitly illustrated by the legacy Bamberg HVMsc359 image00003 example. |
+| A slit, tear, or fold exposes information on material identified as FMR | `ucr` and `fmr` may describe the same visible region. If only one regional label is available, prefer `ucr`. Translucence alone does not create UCR. |
 | Visible reused material occupies the spine-protection context described in the guide | Use `spr` for that context. The shared origin of the material does not erase its binding role. |
 
 These conventions concern information attributable to an earlier use.
@@ -59,6 +68,16 @@ Writing added as a title or other annotation for the current binding does
 not establish reuse by itself. A spine visible in an image does not by
 itself establish SPR: the existing guide distinguishes exterior cover
 material from spine-protection material.
+
+The shared-region clarification is specific: it does not mean that every
+plausible class is stacked on every region. Retain the documented
+over-cover-remnant exception, UCR/SPR uncertainty convention, and other
+specific MBR exceptions. Sharing pixels does not establish multiple source
+fragments. Regional masks are not created by this documentation update.
+
+A triangular cover cut alone does not establish a connecting/guard function.
+The two reviewed triangle-cut examples are NO SCG; their purpose remains
+unknown. Keep the existing SCG display name and token.
 
 Do not infer a particular physical mechanism merely from the label.
 Show-through, ink penetration, and corrosion need not be distinguishable
@@ -85,9 +104,9 @@ The two Markdown helpers need names distinguishing MVP reuse from reuse
 plus future phenomena. Proposed names are in the review; no files have
 yet been renamed.
 
-The README and Markdown helpers link here, and `classifier.param` carries
-a comment summarizing the convention. The legacy HTML presentation is
-retained as historical material and is not being expanded with this addendum.
+The README and Markdown helpers link here. `classifier.param` now contains
+consolidated descriptions, including the November 17 clarifications.
+The legacy HTML and its exact dated backup remain historical material.
 The Word/PDF files have not yet been regenerated with this addition.
 The one-page source-ID guide and the one-to-two-page guide contain
 different historical content as well as different layouts. Preserve their
@@ -99,4 +118,5 @@ do not replace one with the other. See [version and guide provenance](ONTOLOGY_P
 See [the README's multiple-class definitions](README.md#meaning-and-combinations-of-mcl-mbr-and-mmx)
 for `mcl`, `mbr`, and `mmx`. This addendum introduces no new class IDs,
 keyboard shortcuts, directory names, or filename tokens.
+
 

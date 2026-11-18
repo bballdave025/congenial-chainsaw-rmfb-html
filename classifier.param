@@ -167,6 +167,18 @@
        rewriting of historical filenames or classifications is implied.
   -->
 
+
+  <!-- Description consolidation, recorded 2026-11-17:
+       classifier.param contains the maintained class definitions and settings.
+       Non-conflicting legacy HTML explanations and accepted later instructions
+       are consolidated here; shorter guides are synchronized references.
+       Explicit author decisions take precedence over stale historical prose.
+       See docs/ONTOLOGY_DESCRIPTION_CONSOLIDATION_2026-11-17.md for the source
+       mapping, conflict dispositions, exact HTML backup, and remaining work.
+       This records new clarifications without assigning a new freeze date.
+       No historical image name or dataset annotation is changed by this file.
+  -->
+
   <ClassificationGroup id="g0">
   
   <!-- Phrase to remember: "image specifically meant to show the [specific] surface" -->
@@ -195,8 +207,24 @@
 	    <DirectoryName>Outside_Cover_Reuse</DirectoryName>
 	    <AddedFilenameEnding>orc</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Information from an earlier use is visible on or through the exterior
+        front cover, back cover, or covering material over the spine. The
+        cover must still be on the book. For detached material use the current
+        general-not-in-situ class, c15 (J, gni), rather than the former
+        separate not-in-situ-cover key.
+
+        ORC applies when information on the opposite side of the same cover
+        material is visible through the exterior surface. It still applies
+        when that opposite side is functionally front/back matter. That FMR
+        function does not replace ORC in the exterior view. Translucence alone
+        does not create UCR. Other independently applicable classes may
+        coexist.
+
+        Writing added for the present binding, such as its title or catalogue
+        annotation, does not by itself establish reuse. Wear and orientation
+        do not prove chronology. Record uncertain or case-specific annotation
+        judgments without asserting a historical sequence that is not known.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -211,8 +239,33 @@
 	    <DirectoryName>Under_Cover_Reuse</DirectoryName>
 	    <AddedFilenameEnding>ucr</AddedFilenameEnding>
 	    <Description>
-        In other file
-	    </Description>
+        Reused information is exposed beneath a front or back cover, or
+        beneath front/back matter such as a paste-down. A tear, hole, missing
+        portion, undersized cover, or folded-back/turned-over portion can
+        expose it. A separate fragment is not required. Translucence alone is
+        not UCR. If exterior-cover reuse is also visible, ORC and UCR can
+        coexist.
+
+        Use SPR when the visible material is identifiable as spine protection
+        in the specified SPR context. For broken book gutters use UCR unless
+        SPR is apparent. Existing instructions allow uncertain UCR/SPR
+        alternatives for one piece without MBR; another qualifying reuse
+        instance can warrant MBR under the normal multiple-class rules.
+
+        Retain the documented over-cover case: a torn or remaining piece from
+        another surface, visibly distinct from the main reuse, can qualify as
+        UCR. When the only reuse in that over-cover-remnant situation occupies
+        a front-matter surface, use FMR instead. This specific exception is
+        not a blanket ban on UCR and FMR sharing a region.
+
+        Clarification recorded 2026-11-17: where a slit, tear, or fold exposes
+        information on material identified as FMR, UCR and FMR may describe
+        the same visible region. Retain both labels in a multilabel regional
+        annotation. If a single label must be chosen for that exposed region,
+        prefer UCR. Do not infer FMR solely from the existence of an opening.
+        This does not turn uncertainty between alternative classes into two
+        confirmed classes or supersede other specific MBR exceptions.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -227,8 +280,22 @@
 	    <DirectoryName>Spine_Protection_Reuse</DirectoryName>
 	    <AddedFilenameEnding>spr</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Reused information is visible on material protecting the spine,
+        including the folds of the gatherings, where the spine covering is
+        absent or displaced. The protective material may extend toward the
+        covers. An image containing a spine does not by itself establish SPR.
+
+        If the material is seen as part of a paste-down or flyleaf, use FMR
+        unless the image is specifically intended to show the spine. For
+        uncertain UCR/SPR alternatives retain the UCR instructions and the
+        existing exception to MBR. The legacy HTML's absolute prohibition on
+        SPR at gutter tears is superseded by the later documented rule
+        allowing SPR when spine protection is apparent.
+
+        Multiple classifications are permitted. In the legacy single-choice
+        situation, also-visible exterior-cover reuse takes ORC precedence
+        unless the view is specifically meant to show the spine.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -243,8 +310,29 @@
 	    <DirectoryName>Front-back_Matter_Reuse</DirectoryName>
 	    <AddedFilenameEnding>fmr</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Information from a previous use appears on a paste-down or flyleaf. A
+        paste-down may still be attached, partly detached, or fully detached
+        while remaining among the front/back leaves. Multiple flyleaves can
+        qualify; the classification does not distinguish paste-down from
+        flyleaf. The information may be directly visible or visible through
+        the material from its opposite side.
+
+        The inside of a limp cover can qualify when it occupies the
+        structurally equivalent position of a paste-down. The legacy Bamberg
+        HVMsc359 image 00003 example explicitly establishes this inner-cover
+        case.
+
+        Material containing only the current book's own text, title,
+        description, cataloguing, or pen trials does not qualify on that basis
+        alone. Reused text, decoration, or illumination must be present.
+
+        In an exterior-cover view, information visible through the cover still
+        requires ORC even when its opposite-side location is functionally FMR.
+        For FMR information physically exposed by a slit, tear, or fold, the
+        November 17 clarification permits FMR and UCR on the same visible
+        region, with UCR taking precedence if only one label is available. See
+        c2 for the separate over-cover-remnant exception.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -274,8 +362,20 @@
 	    <DirectoryName>Cover_Wraparound_Reuse</DirectoryName>
 	    <AddedFilenameEnding>cwa</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Reused exterior-cover material continues around the edge of a cover
+        board onto its inner side. Use CWA when at least one point of the
+        inside edge of this wraparound is visible. Otherwise use TBR; when
+        uncertain between these two, prefer TBR.
+
+        The legacy description includes wraparound visible on the main
+        surface, on the immediately opposite partial surface across the
+        gutter, and in views of the head, tail, or fore-edge. Apply the
+        current visible-edge criterion rather than automatically labeling
+        every glimpse of cover material CWA. Retain other applicable
+        view/context labels under the current multiple-class rules. Obsolete
+        combined keys and the legacy one-behind category are not current
+        instructions.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -290,8 +390,18 @@
 	    <DirectoryName>Tiny_Background_Reuse</DirectoryName>
 	    <AddedFilenameEnding>tbr</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Reuse is visible in the background beyond intervening pages, often at
+        the edge of a paste-down, flyleaf, or cover wraparound while the main
+        view shows pages within the book. It can be a small exposed margin
+        behind the stack of leaves. For the CWA/TBR distinction, use CWA when
+        the inside edge of the wraparound is visible; otherwise use TBR. When
+        uncertain between TBR and CWA or connecting/guard reuse, prefer TBR.
+
+        The old HTML's one-leaf versus two-leaf cutoff depended on the omitted
+        one-behind class. Do not reactivate that category or infer new labels
+        from that old counting rule. Apply the current context and combination
+        instructions to any other visibly qualifying reuse.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -306,8 +416,20 @@
 	    <DirectoryName>Connecting_or_Guard_Reuse</DirectoryName>
 	    <AddedFilenameEnding>scg</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Reused information-bearing material serves a connecting,
+        strengthening, or guarding role: for example, strips connecting
+        gatherings to the binding, material associated with binding straps,
+        stubs between gatherings that reduce friction, or guards providing a
+        sewing support. It need not be small. Keep the existing scg token and
+        current directory and display name.
+
+        At a gutter tear, use UCR unless spine protection is apparent; do not
+        infer a connecting/guard function merely because material is exposed.
+        When uncertain between SCG and TBR, the current guide favors TBR. A
+        triangular cut or folded cover flap alone does not establish SCG; the
+        two triangle-cut cover examples reviewed on November 17 are excluded
+        from SCG. Their purpose is not established.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -322,8 +444,16 @@
 	    <DirectoryName>Across_Book_Gutter_Reuse</DirectoryName>
 	    <AddedFilenameEnding>abg</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        A view marker for reuse or another interesting phenomenon visible on
+        the facing page across the book gutter when the image mainly presents
+        one page. Assign the relevant phenomenon/context classification as
+        well. ABG alone is not a positive binding-reuse classification.
+
+        ABG does not count as another binding-reuse subtype for MBR. G+F does
+        not warrant B, whereas G+F+R does under the existing guide convention.
+        Retain the current MCL/MMX rules when other interesting phenomena are
+        involved; do not revive the legacy combined-category shortcut.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -339,8 +469,17 @@
 	    <DirectoryName>Wrapper_Reuse</DirectoryName>
 	    <AddedFilenameEnding>wpr</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Information-bearing reused material wraps around or holds loose papers
+        without sewing, in the manner of a folded folder or wrapper. The
+        illustrated guide supplies the examples and distinctions from a bound
+        limp-vellum cover.
+
+        Wrapper examples and the wrapper prediction output are excluded from
+        the current MVP experiment; the ontology entry remains. The guide's
+        wrapper/FMR same-piece MBR captions conflict and remain unresolved. Do
+        not resolve them by automatically counting tags or by extending the
+        November 17 UCR/FMR slit clarification to wrapper examples.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -355,8 +494,13 @@
 	    <DirectoryName>General_Not_In_Situ_Reuse</DirectoryName>
 	    <AddedFilenameEnding>gni</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Binding reuse no longer in its in-situ binding context. The current
+        general category combines the former detached cover, front/back
+        matter, spine-protection, and connecting/guard categories c11-c14. Use
+        J and gni; the former separate keys and the older Y instruction are
+        historical. This combined category avoids requiring a reliable
+        identification of the detached fragment's more specific former role.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -914,8 +1058,13 @@
 	    <DirectoryName>Fake_Out</DirectoryName>
 	    <AddedFilenameEnding>fko</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Fake-out marker. During the original forced-choice annotation this
+        supplied some qualitative uncertainty information; it is not a
+        calibrated probability and is distinct from the Unsure control. The
+        legacy HTML does not supply a fuller current rubric. This
+        consolidation does not invent a visual threshold or treat fko as
+        establishing the image's binary reuse label by itself.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -931,8 +1080,14 @@
 	    <DirectoryName>Important_as_Counter_Example</DirectoryName>
 	    <AddedFilenameEnding>iac</AddedFilenameEnding>
 	    <Description>
-	      In other file
-	    </Description>
+        Important counter-example or contrastive example. Examples include a
+        structure resembling a reuse class without information on the surface,
+        or cases useful for checking whether a model is relying on incidental
+        features such as script, character size, or microfilm perforations.
+        This marker does not replace the image's substantive reuse/non-reuse
+        classification and does not assert measured model behavior before
+        evaluation.
+      </Description>
 	    <Examples>
         In other file
 	    </Examples>
@@ -1074,4 +1229,5 @@
   </ClassificationGroup>
 
 </CustomClassificationParameters>
+
 

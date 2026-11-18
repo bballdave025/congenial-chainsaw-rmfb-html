@@ -4,6 +4,16 @@ Status: documentation review completed; human image audit remains in progress.
 Branch: `docs/binding-context-conventions-2026-11-08`.
 PR: https://github.com/bballdave025/congenial-chainsaw-rmfb-html/pull/14
 
+**November 17 update:** the [description consolidation](docs/ONTOLOGY_DESCRIPTION_CONSOLIDATION_2026-11-17.md)
+now places the maintained definitions in `classifier.param`, incorporates
+non-conflicting HTML explanations, and records the ORC show-through and
+UCR/FMR shared-region clarifications. The exact legacy HTML has been backed
+up. Earlier statements below that XML changes were comments-only describe
+the November 8 work, not this subsequent description consolidation.
+The Word/PDF edits and proposed renames below are still pending.
+This review's root location is temporary: move it under `docs/` and update
+links before merging to main.
+
 ## Scope and authority
 
 Reviewed the DOCX text and published PDF pages of all three named Word/PDF
@@ -230,7 +240,8 @@ procedure for this experiment, not a claim that every older document was identic
 
 *Explanatory note recorded 8 November 2026. This appendix describes the
 annotation procedure already adopted for the current RMMFB MVP experiments
-and publication. It does not introduce new classification rules.*
+and publication. The separately dated November 17 paragraph below records
+the subsequent clarifications.*
 
 Classification follows the reuse context visible in the image. A single
 original information-bearing writing surface—such as one side of a folio
@@ -252,6 +263,18 @@ Apply the existing class definitions to the visible regions:
 - **Front/back-matter reuse (FMR):** earlier information can qualify when
   visible through the material, as well as directly on its surface, within
   the FMR definition.
+
+**November 17 clarification for this appendix:** the inside of a limp cover
+can occupy the structural position of a paste-down and qualify as FMR,
+as in the legacy Bamberg HVMsc359 image00003 example. In an exterior view,
+ORC still applies when the information seen through the cover is on what
+is functionally FMR. Translucence alone does not create UCR. If a slit,
+tear, or fold exposes information on material identified as FMR, UCR and
+FMR may share that visible region; prefer UCR if only one regional label
+is available. Retain the specific over-cover-remnant and MBR exceptions.
+This explicitly records the overlap clarification without claiming the
+old text already defined regional pixel overlap. The two reviewed
+triangle-cut cover examples are NO SCG; their purpose is unknown.
 
 Visibility does not necessarily establish how the information became visible.
 Show-through, ink penetration, and corrosion may be difficult to distinguish
@@ -359,3 +382,4 @@ The exact example and provisional provenance are recorded in
 The supplied derivative is retained as evidence; the processing command and
 full batch membership remain unverified. This is a processing-provenance
 issue, not a new classification rule or a request to replace frozen images.
+

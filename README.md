@@ -3,6 +3,13 @@ Classification ontology and illustrated annotation guides for RMMFB, maintained 
 
 ## Current guide format and annotation convention
 
+`classifier.param` is the maintained source for class settings and definitions.
+Additional non-conflicting explanations from the legacy HTML have been merged
+into its descriptions, together with accepted later clarifications. Explicit
+author decisions govern conflicts; the shorter guides are synchronized aids.
+See the [description consolidation and source mapping](docs/ONTOLOGY_DESCRIPTION_CONSOLIDATION_2026-11-17.md)
+and the [exact legacy HTML backup](docs/historical/classifier.param_legacy_2026-11-17.html).
+
 The maintained instructional workflow is **Microsoft Word source to PDF**.
 The HTML presentation was abandoned because its implementation and upkeep
 exceeded the needs of these classification guides. The Word/PDF workflow
@@ -22,6 +29,10 @@ leaves or fragments.
 A turned-over cover corner can expose UCR without a tear. Earlier
 information visible through an exterior cover is ORC; the analogous
 visibility through front/back matter is FMR within that class's scope.
+ORC still applies in the exterior view when the opposite side is functionally
+FMR. Translucence alone does not create UCR. Where a slit, tear, or fold
+exposes information on material identified as FMR, UCR and FMR may share
+the visible region; prefer UCR if only one regional label is available.
 Apply SPR to the spine-protection context. These are annotation
 conventions; any expected improvement in learning or generalization is
 a separate research hypothesis.
@@ -52,7 +63,7 @@ remaining Word/PDF synchronization work.
 See the [November 8 guide consistency review](GUIDE_CONSISTENCY_REVIEW_2026-11-08.md)
 for the complete findings, proposed filenames, appendix text, and author
 edit checklist. `classifier.param` is authoritative for current keyboard
-shortcuts; in particular, `gni` uses **J**, not the older **Y** shown in the
+shortcuts and consolidated definitions; in particular, `gni` uses **J**, not the older **Y** shown in the
 PDFs. Historical source captions and superseded instructions remain evidence
 of earlier guide versions, not an instruction to relabel the frozen dataset.
 
@@ -248,4 +259,5 @@ of every image's visual classification.
 Other classification ideas, as well as more details about and several image examples for the main reuse document classifications are in the repo files
 
 ---
+
 
