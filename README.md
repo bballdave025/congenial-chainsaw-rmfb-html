@@ -241,7 +241,7 @@ of every image's visual classification.
 | c51 / Stitching_Level_1 | st1 |
 | (parchment maker, basic repairs with twine, no-longer-there veil stitch holes, ... anything else I think of) |  |
 | c52 / Stitching_Level_2 | st2 |
-| (beyond basic twine: hole stitch, not embroidery, baseball stitch, green Vs, ... other things maybe) |  |
+| (beyond basic twine, hole stitch, not embroidery, baseball stitch, green Vs, ... other things maybe) |  |
 | c53 / Stitching_Level_3_Embroidery_etc | st3 |
 | (Embroidery, in-place veils, other fancy, ... and blah and blah and blah) |  |
 | c54 / Manicule | man |
